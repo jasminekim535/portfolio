@@ -13,7 +13,7 @@
   --font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --caption-font: "Monument Grotesk", "Inter", "Helvetica Neue", Arial, sans-serif;
   --mono: "Courier New", Courier, monospace;
-  --nav-w: 18vw;
+  --nav-w: clamp(185px, 18vw, 280px);
 
   /* Type scale: the only sizes used anywhere, each with its own line height */
   --s-12: 1.2rem;  --lh-12: 1.4;   /* captions, small notes */
@@ -22,13 +22,13 @@
   --s-24: 2.4rem;  --lh-24: 1.25;  /* section headings, page subtitles */
   --s-32: 3.2rem;  --lh-32: 1.2;   /* card titles, intro lines */
   --s-48: 4.8rem;  --lh-48: 1.1;   /* page titles */
-  --s-72: 7.2rem;  --lh-72: 1.05;  /* homepage hero */
+  --s-72: clamp(3.6rem, calc((100vw - var(--nav-w)) * .06), 7.2rem);  --lh-72: 1.05;  /* fluid */  /* homepage hero */
   --tag: 1.3rem;   --lh-tag: 1.8;  /* monospace tag lines */
 }
 
 /* ===== BASE ===== */
 * { box-sizing: border-box; }
-html { font-size: clamp(8.5px, calc(100vw / 144), 13px); scroll-behavior: smooth; }
+html { font-size: clamp(9.5px, calc(100vw / 144), 13px); scroll-behavior: smooth; }
 body {
   margin: 0; background: #ffffff; color: var(--body);
   font-family: var(--font); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
@@ -48,7 +48,7 @@ img, video { display: block; }
   display: flex; flex-direction: column;
   font-size: var(--s-16); line-height: var(--lh-16); color: rgb(0, 0, 0);
 }
-.sidebar a { display: block; }
+.sidebar a { display: block; white-space: nowrap; }
 .sidebar a[aria-current="page"] { color: var(--accent); }
 .nav-label { margin: 0; color: var(--muted); }
 .sidebar a + .nav-label { margin-top: 1.6em; }
@@ -58,13 +58,11 @@ img, video { display: block; }
 /* ===== PAGE (Cargo .page / .page-layout / .page-content) ===== */
 main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 .page-content {
-  width: 84%; padding: 5rem;
-  border: .1rem solid var(--rule); background: #ffffff;
+  width: calc(100% - var(--nav-w)); padding: 5rem;
+  border: .1rem solid var(--rule); border-top: 0; background: #ffffff;
   font-size: var(--s-16); line-height: var(--lh-16); color: var(--body);
   overflow-wrap: break-word;
 }
-#homepage .page-content { width: 83%; }
-#trendy .page-content { width: 83%; }
 #migrant-compass .page-content { padding: 6rem; }
 #information .page-content { padding: 2.5rem; }
 
@@ -149,21 +147,29 @@ main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 .ss-prev { left: 15px; }
 .ss-next { right: 15px; }
 
-/* ===== MOBILE (Cargo: pages full width, padding halved, text scaled up) ===== */
+/* ===== RESPONSIVE ===== */
+/* tablet: menu moves to the top, content goes full width */
 @media (max-width: 768px) {
-  html { font-size: 9.5px; }
-  .sidebar { position: static; width: auto; padding: 2rem 1.6rem 1rem; }
+  .sidebar { position: static; width: auto; padding: 2rem 2.4rem 1.2rem; }
   .sidebar nav { flex-flow: row wrap; gap: 0 1.2em; }
   .sidebar .nav-label, .sidebar a + .nav-label, .sidebar a:nth-of-type(4) + .nav-label { width: 100%; margin-top: .8em; }
   main.page { min-height: 0; }
-  .page-content, #homepage .page-content, #trendy .page-content { width: 100%; padding: 2.5rem 1.6rem; border-width: .1rem 0 0; }
-  #migrant-compass .page-content, #information .page-content { padding: 2.5rem 1.6rem; }
-  :root { --s-72: 4.8rem; --s-48: 3.6rem; --lh-48: 1.15; --s-32: 2.6rem; }
-  .cols { flex-direction: column; }
-  .col { width: 100%; }
-  .media { width: 100% !important; }
-  .g-grid:not([style*="--cols:1"]) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-content, #migrant-compass .page-content, #information .page-content {
+    width: 100%; padding: 2.4rem 2.4rem 5rem; border: 0;
+  }
+  :root { --s-72: clamp(4.2rem, 7vw, 5.6rem); --s-48: 4rem; --s-32: 2.8rem; }
+  .g-grid:not([style*="--cols:1"]):not([style*="--cols:2"]) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .g-columnized { columns: 2; }
   .g-justify > .media { flex-basis: calc(var(--ar) * 14rem); }
   .nowrap { white-space: normal; }
+}
+/* phone: columns stack, short info columns (TIME / TOOLS / ROLE) sit two per row */
+@media (max-width: 600px) {
+  .sidebar, .page-content, #migrant-compass .page-content, #information .page-content { padding-left: 1.6rem; padding-right: 1.6rem; }
+  :root { --s-72: 4.2rem; --lh-72: 1.1; --s-48: 3.4rem; --lh-48: 1.15; --s-32: 2.6rem; --s-24: 2.2rem; }
+  .cols { flex-direction: column; gap: 1.6rem; }
+  .col { width: 100%; }
+  .cols:has(> .col:nth-child(3)):not(:has(> .col[style])) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .media { width: 100% !important; }
+  .g-grid:not([style*="--cols:1"]) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
