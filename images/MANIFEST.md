@@ -4,19 +4,20 @@ Every image/video slot on the site, the path it loads from, and the original fil
 Upload a file to the listed path (any image works; keep the same file name and extension, or update the `src` in the HTML).
 Until a file exists, the page shows a blank placeholder box at the correct size.
 
-## index.html
 
-| Path | Original file | Where |
+## index.html — Home
+
+| Path | Original file | Size (px) |
 |---|---|---|
-| `images/now-institute.jpg` | Screenshot-2026-07-07-at-2.21.54PM.png | Home – Now Institute card |
-| `images/hfes-stg.jpg` | Screenshot-2026-03-27-at-3.55.09PM.png | Home – HFES STG card |
-| `images/trendy.jpg` | title_page.png | Home – Trendy card |
-| `images/travel-mate.jpg` | meow.png | Home – Travel Mate card |
-| `images/migrant-compass.jpg` | title_page1.png | Home – Migrant Compass card |
-| `images/day-guard.jpg` | 9_16.png | Home – Designs tile |
-| `images/playing-cards.jpg` | playing-cards_Page_2.jpg | Home – Designs tile |
-| `images/king-menkaura.jpg` | king-poster-.jpg | Home – Designs tile |
-| `images/korea.jpg` | Jasmine-poster.jpg | Home – Designs tile |
+| `images/index/01-screenshot-2026-07-07-at-2.21.54pm.png` | Screenshot-2026-07-07-at-2.21.54PM.png | 3024×1602 |
+| `images/index/02-screenshot-2026-03-27-at-3.55.09pm.png` | Screenshot-2026-03-27-at-3.55.09PM.png | 2994×1496 |
+| `images/index/03-title-page.png` | title_page.png | 1920×940 |
+| `images/index/04-meow.png` | meow.png | 8123×4003 |
+| `images/index/05-title-page1.png` | title_page1.png | 1920×940 |
+| `images/index/06-9-16.png` | 9_16.png | 2160×3840 |
+| `images/index/07-playing-cards-page-2.jpg` | playing-cards_Page_2.jpg | 2200×3400 |
+| `images/index/08-king-poster.jpg` | king-poster-.jpg | 3456×8064 |
+| `images/index/09-jasmine-poster.jpg` | Jasmine-poster.jpg | 5148×8008 |
 
 ## now-institute.html — Now Institute
 
