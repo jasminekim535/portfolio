@@ -121,6 +121,7 @@ img, video { display: block; }
 .rlink:hover { color: var(--accent); }
 
 .rsec { padding-top: 2.4rem; border-top: 1px solid var(--rule); }
+.rsec + .rsec { margin-top: 7.2rem; }
 #work, #designs { scroll-margin-top: 7rem; }
 .rsec-head { display: flex; justify-content: space-between; align-items: center; gap: 2rem; margin-bottom: 2.4rem; }
 .page-content .rsec-title { margin: 0; font-size: 3.2rem; line-height: 1.1; font-weight: 400; letter-spacing: -0.035em; color: var(--ink); }
@@ -132,7 +133,8 @@ img, video { display: block; }
 .wcard--wide { grid-column: 1 / -1; }
 .wcard { display: flex; flex-direction: column; overflow: hidden; border-radius: var(--radius); background: var(--surface); color: inherit; }
 .wcard-top { display: flex; justify-content: space-between; gap: 1.6rem; padding: 2.4rem 2.4rem 2rem; }
-.page-content .wcard-title { margin: 0; font-size: 2.2rem; line-height: 1.2; font-weight: 500; letter-spacing: -0.025em; color: var(--ink); }
+.page-content .wcard-title { margin: 0; font-size: 2.2rem; line-height: 1.2; font-weight: 500; letter-spacing: -0.025em; color: var(--ink); transition: color .2s; }
+.wcard:hover .wcard-title { color: var(--accent); }
 .wcard-sub { margin: .4rem 0 0; color: var(--body); }
 .arrow {
   flex: none; display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border: 1px solid var(--rule); border-radius: 50%;
