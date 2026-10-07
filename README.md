@@ -8,6 +8,7 @@ Open `index.html` in a browser; no build step.
 - Project pages: `now-institute`, `hfes-stg`, `trendy`, `travel-mate`, `migrant-compass`, `hopoffer`
 - Design pages: `day-guard`, `playing-cards`, `king-menkaura-and-queen`, `transformation-of-south-korea`, `distraction`, `alphabet-book`, `kidod-pitchdeck`, `fenway-is-art`, `year-3147`, `trauma`
 - `styles.css` – all styles
+- `site.js` – phone menu, slideshows, click-to-enlarge images
 
 ## Images
 
