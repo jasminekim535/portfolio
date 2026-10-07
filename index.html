@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jasmine Kim | UI/UX &amp; Graphic Designer</title>
-<meta name="description" content="Hello, I am Jasmine Kim UI/UX &amp; Graphic Designer. @Tufts University BFA &amp; Minor in Entrepreneurship. ● PROJECTS NOW INSTITUTE Website Design for Morphosis AI T">
+<meta name="description" content="I design intuitive, user-centered experiences — turning complex ideas into simple, engaging solutions through research-driven design.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -13,7 +13,8 @@
 <body>
 
 <aside class="sidebar">
-  <nav aria-label="Main">
+  <div class="bar"><a class="brand" href="index.html">Jasmine Kim</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button></div>
+  <nav id="site-nav" aria-label="Main">
     <a href="index.html" aria-current="page">Home</a>
     <a href="https://drive.google.com/file/d/1OOqGdKUFcIr9i4K3hlURFipVqCy_xz__/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
     <a href="about.html">About</a>
@@ -32,53 +33,51 @@
 
 <main class="page page-home" id="homepage">
 <div class="page-content">
-<h1 class="s-72">
-Hello, I am Jasmine Kim<br>UI/UX &#x26; Graphic Designer.</h1><span class="s-32"><br><span class="muted"> @Tufts University BFA &#x26; Minor in Entrepreneurship.</span><br>
-<br>
-</span><hr><br>
-<span class="muted"><span class="icon" aria-hidden="true">●</span>PROJECTS<br>
-<br>
-<div class="cols" style="--gap:1.0rem"><div class="col"><span class="muted"><figure class="media" style="width:93.2%;--ar:1.8876"><a class="media-link" href="now-institute.html"><div class="ph" style="aspect-ratio:3024/1602;border-width: 0.1rem;border-color: rgba(0, 0, 0, 0.25);border-style: solid;border-radius: 2rem;"><img src="images/index/01-screenshot-2026-07-07-at-2.21.54pm.png" alt="Home image 1" width="3024" height="1602" loading="lazy" onerror="this.hidden=true"></div></a></figure><br>
-<br>
-<a href="now-institute.html" class="s-32">NOW INSTITUTE </a><br>
-<span class="s-20 muted">Website Design for Morphosis</span><br><span class="mono">AI TOOLS <span class="icon" aria-hidden="true">●</span> PROTOTYPING
-<span class="icon" aria-hidden="true">●</span> INTERNSHIP </span></span></div><div class="col">
-<span class="muted">
-<span class="muted"><figure class="media" style="width:96%;--ar:2.0013"><a class="media-link" href="hfes-stg.html"><div class="ph" style="aspect-ratio:2994/1496;border-width: 0.1rem;border-color: rgba(0, 0, 0, 0.25);border-style: solid;border-radius: 2rem;"><img src="images/index/02-screenshot-2026-03-27-at-3.55.09pm.png" alt="Home image 2" width="2994" height="1496" loading="lazy" onerror="this.hidden=true"></div></a></figure><br>
-<br>
-</span><h1 class="s-32">HFES STG</h1></span><span class="muted"><span class="muted">
-<span class="s-20 muted">A website for the technical group </span><br><span class="mono">LEADERSHIP <span class="icon" aria-hidden="true">●</span> NON-PROFIT <span class="icon" aria-hidden="true">●</span> USABILITY TESTING</span></span>
-</span></div></div>
-<span class="muted"><div class="cols" style="--gap:1.0rem"><div class="col">
-<span class="muted"><figure class="media" style="width:95.4%;--ar:2.0426"><a class="media-link" href="trendy.html"><div class="ph" style="aspect-ratio:1920/940;border-width: 0.1rem;border-color: rgba(0, 0, 0, 0.25);border-style: solid;border-radius: 2rem;"><img src="images/index/03-title-page.png" alt="Home image 3" width="1920" height="940" loading="lazy" onerror="this.hidden=true"></div></a></figure><br>
-<br>
-<a href="trendy.html" class="s-32">TRENDY</a><br>
-<span class="s-20 muted">An all-in-one app for beauty &#x26; fashion trends</span><br><span class="mono">APP DESIGN <span class="icon" aria-hidden="true">●</span> LOGO DESIGN <span class="icon" aria-hidden="true">●</span> USER RESEARCH</span></span>
-</div><div class="col">
-<a href="travel-mate.html" class="muted"><figure class="media" style="width:95.2%;--ar:2.0292"><div class="ph" style="aspect-ratio:8123/4003;border-width: 0.1rem;border-color: rgba(0, 0, 0, 0.25);border-style: solid;border-radius: 2rem;"><img src="images/index/04-meow.png" alt="Home image 4" width="8123" height="4003" loading="lazy" onerror="this.hidden=true"></div></figure><br>
-<br>
-<span class="s-32">TRAVEL MATE</span><br><span class="s-20 muted">Travel planning with friends made easy </span><br><span class="mono">APP DESIGN  <span class="icon" aria-hidden="true">●</span> CROSS-FUNCTIONAL TEAMWORK</span></a>
-</div></div>
-</span>
+<header class="home-hero">
+<h1 class="s-72">Hello, I am Jasmine Kim<br>UI/UX &amp; Graphic Designer.</h1>
+<p class="home-school">@Tufts University BFA &amp; Minor in Entrepreneurship.</p>
+<p class="home-focus">I design intuitive, user-centered experiences — turning complex ideas into simple, engaging solutions through research-driven design.</p>
+<p class="home-cta"><a class="btn" href="#work">View work ↓</a><a class="btn btn--ghost" href="https://drive.google.com/file/d/1OOqGdKUFcIr9i4K3hlURFipVqCy_xz__/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a><a class="btn btn--ghost" href="mailto:jasminekim535@gmail.com">Email ↗</a></p>
+</header>
+<hr>
+<section id="work" aria-label="Projects">
+<p class="label"><span class="icon" aria-hidden="true">●</span>PROJECTS</p>
+<a class="card card--featured" href="now-institute.html">
+<div class="card-img"><img src="images/index/01-screenshot-2026-07-07-at-2.21.54pm.png" alt="Now Institute project cover" loading="lazy" onerror="this.hidden=true"></div>
+<div class="card-body"><h3 class="card-title">Now Institute</h3><p class="card-sub">Website Design for Morphosis</p><p class="card-hl">2 sites launched · Bilingual JP / EN</p><div class="card-stats"><div><span class="stat-n">2</span><span class="stat-l">websites designed &amp; launched</span></div><div><span class="stat-n">2</span><span class="stat-l">languages on Noto Now — Japanese &amp; English</span></div></div><p class="tags">AI Tools <span aria-hidden="true">·</span> Prototyping <span aria-hidden="true">·</span> Internship</p><span class="card-cta">View case study →</span></div>
+</a>
+<div class="card-grid">
+<a class="card" href="hfes-stg.html">
+<div class="card-img"><img src="images/index/02-screenshot-2026-03-27-at-3.55.09pm.png" alt="HFES STG project cover" loading="lazy" onerror="this.hidden=true"></div>
+<div class="card-body"><h3 class="card-title">HFES STG</h3><p class="card-sub">A website for the technical group</p><p class="card-hl">200+ members surveyed · Live site</p><p class="tags">Leadership <span aria-hidden="true">·</span> Non-profit <span aria-hidden="true">·</span> Usability Testing</p><span class="card-cta">View case study →</span></div>
+</a><a class="card" href="trendy.html">
+<div class="card-img"><img src="images/index/03-title-page.png" alt="Trendy project cover" loading="lazy" onerror="this.hidden=true"></div>
+<div class="card-body"><h3 class="card-title">Trendy</h3><p class="card-sub">An all-in-one app for beauty &amp; fashion trends</p><p class="card-hl">Solo project · Concept to UI</p><p class="tags">App Design <span aria-hidden="true">·</span> Logo Design <span aria-hidden="true">·</span> User Research</p><span class="card-cta">View case study →</span></div>
+</a><a class="card" href="travel-mate.html">
+<div class="card-img"><img src="images/index/04-meow.png" alt="Travel Mate project cover" loading="lazy" onerror="this.hidden=true"></div>
+<div class="card-body"><h3 class="card-title">Travel Mate</h3><p class="card-sub">Travel planning with friends made easy</p><p class="card-hl">16 iterations · 100+ screens</p><p class="tags">App Design <span aria-hidden="true">·</span> Cross-functional Teamwork</p><span class="card-cta">View case study →</span></div>
+</a><a class="card" href="migrant-compass.html">
+<div class="card-img"><img src="images/index/05-title-page1.png" alt="Migrant Compass project cover" loading="lazy" onerror="this.hidden=true"></div>
+<div class="card-body"><h3 class="card-title">Migrant Compass</h3><p class="card-sub">Guiding migrants with real-time insights</p><p class="card-hl">Offline-first safety guidance</p><p class="tags">Problem-solving <span aria-hidden="true">·</span> Teamwork</p><span class="card-cta">View case study →</span></div>
+</a>
+</div>
+</section>
+<hr>
+<section aria-label="Designs">
+<div class="label-row"><p class="label"><span class="icon" aria-hidden="true">●</span>DESIGNS</p><a class="view-all" href="designs.html">View all →</a></div>
+<div class="tiles"><a class="tile" href="day-guard.html"><div class="tile-img"><img src="images/index/06-9-16.png" alt="day–guard cover" loading="lazy" onerror="this.hidden=true"></div>
+<p class="tags">Internship <span aria-hidden="true">·</span> Meta-ads <span aria-hidden="true">·</span> Email</p><p class="tile-title">day–guard</p></a><a class="tile" href="playing-cards.html"><div class="tile-img"><img src="images/index/07-playing-cards-page-2.jpg" alt="Playing Cards cover" loading="lazy" onerror="this.hidden=true"></div>
+<p class="tags">Card Design <span aria-hidden="true">·</span> Printmaking</p><p class="tile-title">Playing Cards</p></a><a class="tile" href="king-menkaura-and-queen.html"><div class="tile-img"><img src="images/index/08-king-poster.jpg" alt="King Menkaura and Queen cover" loading="lazy" onerror="this.hidden=true"></div>
+<p class="tags">Museum <span aria-hidden="true">·</span> Wayfinding</p><p class="tile-title">King Menkaura and Queen</p></a><a class="tile" href="transformation-of-south-korea.html"><div class="tile-img"><img src="images/index/09-jasmine-poster.jpg" alt="Transformation of Korea cover" loading="lazy" onerror="this.hidden=true"></div>
+<p class="tags">Exhibition <span aria-hidden="true">·</span> Research</p><p class="tile-title">Transformation of Korea</p></a></div>
+</section>
+<footer class="site-foot">
 
-
-<div class="cols" style="--gap:1.0rem"><div class="col">
-<span class="muted"><a href="migrant-compass.html"><figure class="media" style="width:98.4%;--ar:2.0426"><div class="ph" style="aspect-ratio:1920/940;border-radius: 2.0rem;border-color: rgba(0, 0, 0, 0.4);border-width: 0.1rem;border-style: solid;"><img src="images/index/05-title-page1.png" alt="Home image 5" width="1920" height="940" loading="lazy" onerror="this.hidden=true"></div></figure><br>
-<br>
-</a><span class="muted"><a href="migrant-compass.html"><span class="s-32">MIGRANT COMPASS</span><br>
-<span class="s-20 muted">Guiding migrants with real-time insights</span></a><br></span></span><span class="mono">PROBLEM-SOLVING  <span class="icon" aria-hidden="true">●</span> TEAMWORK</span>
-<br></div><div class="col"></div></div></span><span class="muted"><span class="muted"><br>
-</span></span>
-<br><hr><span class="muted">                                                                                                           <div class="cols" style="--gap:1rem"><div class="col" style="--span:10"><span class="muted"><span class="icon" aria-hidden="true">●</span>DESIGNS  </span></div><div class="col" style="--span:2"><span class="muted"> <b><a href="designs.html">                    VIEW ALL</a></b></span></div></div>                                                                </span><br><div class="g-justify"><figure class="media" style="--ar:0.5625"><a class="media-link" href="day-guard.html"><div class="ph" style="aspect-ratio:2160/3840;border-width: 2.5rem;border-color: #eeeeee;border-style: solid;"><img src="images/index/06-9-16.png" alt="Home image 6" width="2160" height="3840" loading="lazy" onerror="this.hidden=true"></div></a><figcaption><span class="mono">INTERNSHIP  <span class="icon" aria-hidden="true">●</span> META-ADS
-<span class="icon" aria-hidden="true">●</span> EMAIL </span>
-day–guard</figcaption></figure><figure class="media" style="--ar:0.6471"><a class="media-link" href="playing-cards.html"><div class="ph" style="aspect-ratio:2200/3400;border-width: 2.5rem;border-color: #eeeeee;border-style: solid;"><img src="images/index/07-playing-cards-page-2.jpg" alt="Home image 7" width="2200" height="3400" loading="lazy" onerror="this.hidden=true"></div></a><figcaption><span class="mono">CARD DESIGN <span class="icon" aria-hidden="true">●</span> PRINTMAKING </span>
-Playing Cards</figcaption></figure><figure class="media" style="--ar:0.4286"><a class="media-link" href="king-menkaura-and-queen.html"><div class="ph" style="aspect-ratio:3456/8064;border-width: 2.5rem;border-color: #eeeeee;border-style: solid;"><img src="images/index/08-king-poster.jpg" alt="Home image 8" width="3456" height="8064" loading="lazy" onerror="this.hidden=true"></div></a><figcaption><span class="mono">MUSEUM <span class="icon" aria-hidden="true">●</span> WAYFINDING </span>
-King Menkaura <br>
-and Queen </figcaption></figure><figure class="media" style="--ar:0.6429"><a class="media-link" href="transformation-of-south-korea.html"><div class="ph" style="aspect-ratio:5148/8008;border-width: 2.5rem;border-color: #eeeeee;border-style: solid;"><img src="images/index/09-jasmine-poster.jpg" alt="Home image 9" width="5148" height="8008" loading="lazy" onerror="this.hidden=true"></div></a><figcaption><span class="mono">EXHIBITION <span class="icon" aria-hidden="true">●</span> RESEARCH</span>
-Transformation of Korea
-</figcaption></figure></div><br>
+<div class="foot-row"><span>Jasmine Kim — UI/UX &amp; Graphic Designer</span>
+<span class="foot-links"><a href="mailto:jasminekim535@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/jasmine-kim-22838a339/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://drive.google.com/file/d/1OOqGdKUFcIr9i4K3hlURFipVqCy_xz__/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></span></div>
+</footer>
 </div>
 </main>
-
+<script src="site.js" defer></script>
 </body>
 </html>
