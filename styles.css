@@ -98,6 +98,14 @@ main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 .page-content :is(.s-24, .s-32, .s-48, .s-72):not(h2) b { font-weight: 400; }
 .page-content .muted .col { color: var(--body); }
 #homepage .cols { margin-bottom: 4rem; }
+/* project cards: identical width and shape regardless of each image's own size */
+#homepage .cols .media { width: 100% !important; }
+#homepage .cols .media .ph { aspect-ratio: 2 / 1 !important; }
+/* design tiles: four equal columns, one shape */
+#homepage .g-justify { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+#homepage .g-justify > .media { width: 100%; }
+#homepage .g-justify .ph { aspect-ratio: 2 / 3 !important; }
+@media (max-width: 768px) { #homepage .g-justify { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ===== COLUMNS ===== */
 .cols { display: flex; gap: var(--gap, 1rem); align-items: flex-start; }
