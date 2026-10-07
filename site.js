@@ -84,6 +84,31 @@ document.querySelectorAll('.slideshow').forEach(function (ss) {
   window.addEventListener('resize', function () { moveBar(tabs.querySelector('.tab.is-active')); });
 })();
 
+// Project index: hovering (or tabbing to) a row shows its cover in the preview panel
+(function () {
+  var pv = document.querySelector('.preview');
+  if (!pv) return;
+  var img = pv.querySelector('img'), label = pv.querySelector('.pv-label'), cap = pv.querySelector('.pv-cap');
+  var current = null;
+  function show(row) {
+    if (row === current) return;
+    if (current) current.classList.remove('is-on');
+    current = row;
+    row.classList.add('is-on');
+    pv.classList.add('is-swapping');
+    setTimeout(function () {
+      img.hidden = false;
+      img.src = row.dataset.img;
+      label.textContent = cap.textContent = row.dataset.title;
+      pv.classList.remove('is-swapping');
+    }, reduceMotion ? 0 : 150);
+  }
+  document.querySelectorAll('.row').forEach(function (row) {
+    row.addEventListener('mouseenter', function () { show(row); });
+    row.addEventListener('focus', function () { show(row); });
+  });
+})();
+
 // Gentle fade-in for content that starts below the fold
 (function () {
   if (reduceMotion || !('IntersectionObserver' in window)) return;
