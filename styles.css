@@ -14,6 +14,16 @@
   --caption-font: "Monument Grotesk", "Inter", "Helvetica Neue", Arial, sans-serif;
   --mono: "Courier New", Courier, monospace;
   --nav-w: 18vw;
+
+  /* Type scale: the only sizes used anywhere, each with its own line height */
+  --s-12: 1.2rem;  --lh-12: 1.4;   /* captions, small notes */
+  --s-16: 1.6rem;  --lh-16: 1.5;   /* body, nav */
+  --s-20: 2rem;    --lh-20: 1.35;  /* card subtitles, card captions */
+  --s-24: 2.4rem;  --lh-24: 1.25;  /* section headings, page subtitles */
+  --s-32: 3.2rem;  --lh-32: 1.2;   /* card titles, intro lines */
+  --s-48: 4.8rem;  --lh-48: 1.1;   /* page titles */
+  --s-72: 7.2rem;  --lh-72: 1.05;  /* homepage hero */
+  --tag: 1.3rem;   --lh-tag: 1.8;  /* monospace tag lines */
 }
 
 /* ===== BASE ===== */
@@ -36,7 +46,7 @@ img, video { display: block; }
 }
 .sidebar nav {
   display: flex; flex-direction: column;
-  font-size: 1.8rem; line-height: 1.6; color: rgb(0, 0, 0);
+  font-size: var(--s-16); line-height: var(--lh-16); color: rgb(0, 0, 0);
 }
 .sidebar a { display: block; }
 .sidebar a[aria-current="page"] { color: var(--accent); }
@@ -50,9 +60,8 @@ main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 .page-content {
   width: 84%; padding: 5rem;
   border: .1rem solid var(--rule); background: #ffffff;
-  font-size: 1.6rem; line-height: 1.5; color: var(--body);
+  font-size: var(--s-16); line-height: var(--lh-16); color: var(--body);
   overflow-wrap: break-word;
-  --ts: 1.6rem;
 }
 #homepage .page-content { width: 83%; }
 #trendy .page-content { width: 83%; }
@@ -60,22 +69,35 @@ main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 #information .page-content { padding: 2.5rem; }
 
 /* ===== TEXT STYLES (site stylesheet) ===== */
-.page-content h1 { margin: 0; font-size: 2.4rem; font-weight: 400; line-height: 1.15; color: var(--ink); --ts: 2.4rem; }
-.page-content h2 { margin: 0; font-size: 1.55rem; font-weight: 600; line-height: 1.35; color: var(--muted); --ts: 1.55rem; }
-.page-content h3 { margin: 0; font-size: 1em; font-weight: 700; }
+.page-content h1 { margin: 0; font-size: var(--s-24); line-height: var(--lh-24); font-weight: 400; color: var(--ink); }
+.page-content h2 { margin: 0; font-size: var(--s-24); line-height: var(--lh-24); font-weight: 600; color: var(--muted); }
+.page-content h3 { margin: 0; font-size: var(--s-16); line-height: var(--lh-16); font-weight: 700; }
 .page-content b { font-weight: 700; }
 .page-content hr { border: 0; height: 1px; background: var(--rule); margin: 1rem 0; }
 .page-content ul { margin: 0; padding: 0 0 0 2em; }
 .page-content ol { margin: 0; padding: 0 0 0 2.5em; }
-.mono {   /* Cargo text style "style-4" */
-  display: block; font-family: var(--mono); font-size: 1.6rem; font-weight: 400;
-  line-height: 1.2; color: var(--body); --ts: 1.6rem;
+.mono {   /* Cargo text style "style-4": tag lines */
+  display: block; font-family: var(--mono); font-size: var(--tag); font-weight: 400;
+  line-height: var(--lh-tag); letter-spacing: .02em; color: var(--body);
 }
 .nowrap { white-space: nowrap; }
 .icon { display: inline-block; font-size: .7em; line-height: 1; vertical-align: .12em; margin-right: .25em; }
 
-/* Cargo's --font-scale multiplies the enclosing text style's size (not the parent's) */
-.page-content [style*="--fs"] { font-size: calc(var(--fs) * var(--ts)); }
+/* Size classes (converted from Cargo's per-element --font-scale, snapped to the scale) */
+.page-content .s-16 { font-size: var(--s-16); line-height: var(--lh-16); }
+.page-content .s-20 { font-size: var(--s-20); line-height: var(--lh-20); }
+.page-content .s-24 { font-size: var(--s-24); line-height: var(--lh-24); }
+.page-content .s-32 { font-size: var(--s-32); line-height: var(--lh-32); }
+.page-content .s-48 { font-size: var(--s-48); line-height: var(--lh-48); }
+.page-content .s-72 { font-size: var(--s-72); line-height: var(--lh-72); }
+.page-content .muted { color: var(--muted); }
+/* headings are always ink and regular weight unless explicitly gray; text in columns
+   inside Cargo's gray section wrappers reads as body text */
+.page-content :is(h1, .s-24, .s-32, .s-48, .s-72):not(.muted) { color: var(--ink); }
+.page-content :is(.s-24, .s-32, .s-48, .s-72):not(h2),
+.page-content :is(.s-24, .s-32, .s-48, .s-72):not(h2) b { font-weight: 400; }
+.page-content .muted .col { color: var(--body); }
+#homepage .cols { margin-bottom: 4rem; }
 
 /* ===== COLUMNS ===== */
 .cols { display: flex; gap: var(--gap, 1rem); align-items: flex-start; }
@@ -86,9 +108,12 @@ main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 .media .ph { display: block; width: 100%; background: var(--ph); overflow: hidden; background-clip: padding-box; }
 .media .ph img, .media .ph video { width: 100%; height: 100%; object-fit: cover; }
 .media figcaption {
-  margin-top: .5em; font-family: var(--caption-font); font-size: 1.2rem; font-weight: 500;
-  line-height: 1.2; color: var(--ink); --ts: 1.2rem;
+  margin-top: .5em; font-family: var(--caption-font); font-size: var(--s-12); font-weight: 500;
+  line-height: var(--lh-12); color: var(--ink);
 }
+/* card captions (tag line + title), e.g. the Designs tiles */
+.media figcaption:has(.mono) { margin-top: .8em; font-size: var(--s-20); line-height: var(--lh-20); font-weight: 400; }
+.media figcaption .mono { margin-bottom: .2em; }
 .media figcaption a { text-decoration: underline; }
 [style*="text-align: center"] > .media { margin-inline: auto; }
 .embed { aspect-ratio: 16 / 9; background: var(--ph); }
@@ -120,12 +145,12 @@ main.page { display: flex; justify-content: flex-end; min-height: 100vh; }
 @media (max-width: 768px) {
   html { font-size: 9.5px; }
   .sidebar { position: static; width: auto; padding: 2rem 1.6rem 1rem; }
-  .sidebar nav { flex-flow: row wrap; gap: 0 1.2em; font-size: 1.7rem; }
+  .sidebar nav { flex-flow: row wrap; gap: 0 1.2em; }
   .sidebar .nav-label, .sidebar a + .nav-label, .sidebar a:nth-of-type(4) + .nav-label { width: 100%; margin-top: .8em; }
   main.page { min-height: 0; }
   .page-content, #homepage .page-content, #trendy .page-content { width: 100%; padding: 2.5rem 1.6rem; border-width: .1rem 0 0; }
   #migrant-compass .page-content, #information .page-content { padding: 2.5rem 1.6rem; }
-  .page-content [style*="--fs"] { font-size: calc((1 + (var(--fs) - 1) * .5) * var(--ts)); }
+  :root { --s-72: 4.8rem; --s-48: 3.6rem; --lh-48: 1.15; --s-32: 2.6rem; }
   .cols { flex-direction: column; }
   .col { width: 100%; }
   .media { width: 100% !important; }
