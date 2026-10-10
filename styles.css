@@ -45,11 +45,8 @@ img, video { display: block; }
 /* ===== TOP NAV: name left, links centered, one button right ===== */
 .topbar { position: sticky; top: 0; z-index: 10; background: var(--bg); }
 .topbar-in { display: flex; align-items: center; gap: 2rem; max-width: var(--max-w); margin: 0 auto; padding: 1.6rem 5rem; font-size: 1.5rem; }
-.brand {
-  display: grid; place-items: center; width: 3.6rem; height: 3.6rem; background: var(--ink); color: var(--bg);
-  font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; transition: background .2s, color .2s, box-shadow .2s;
-}
-.brand:hover { background: var(--bg); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.brand { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); transition: opacity .2s; }
+.brand:hover { opacity: .6; }
 .topbar nav { display: flex; flex: 1; align-items: center; gap: 3.2rem; }
 .topbar nav a:first-child { margin-left: auto; }
 .topbar nav a { position: relative; padding: .3rem 0; color: var(--ink); }
