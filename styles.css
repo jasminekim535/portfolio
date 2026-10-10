@@ -169,7 +169,11 @@ img, video { display: block; }
 .page-content .wk-title { margin: 1.6rem 0 0; font-size: 2.6rem; line-height: 1.15; font-weight: 500; letter-spacing: -0.03em; color: var(--ink); }
 .wk:hover .wk-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .wk-sub { margin: .4rem 0 0; font-size: 1.5rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }   /* always one line */
-.page-content .wkgrid4 .wk-title, .page-content .masonry .wk-title { font-size: 2.2rem; }
+.page-content .wkgrid4 .wk-title, .page-content .masonry .wk-title { font-size: 2rem; }
+/* design cards: title + one quiet line only */
+.wkgrid4 .chips, .masonry .chips { display: none !important; }
+.wkgrid4 .wk-sub, .masonry .wk-sub { margin-top: .2rem; font-size: 1.4rem; }
+.page-content .wkgrid4 .wk-title, .page-content .masonry .wk-title { margin-top: 1.2rem; }
 
 /* design cards: same panel as projects, smaller */
 .dgrid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
