@@ -175,6 +175,64 @@ img, video { display: block; }
 }
 @media (max-width: 600px) { .shots--more { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
+/* ===== HFES STG CASE STUDY ===== */
+.hf-hero { margin-bottom: 6.4rem; }
+.hmw { display: grid; grid-template-columns: 1fr 1.3fr; gap: 1.2rem; margin-bottom: 8rem; }
+.hmw > div { padding: 2.4rem; border-radius: var(--radius); background: var(--surface); }
+.hmw p { margin: 0; font-size: 1.7rem; line-height: 1.45; color: var(--ink); }
+.hmw .hmw-q { background: var(--ink); }
+.hmw .hmw-q p { font-size: 2.4rem; line-height: 1.25; letter-spacing: -0.02em; color: var(--bg); }
+.hmw .hmw-q .csr-k { background: var(--bg); color: var(--ink); }
+/* research funnel */
+.funnel { display: flex; flex-direction: column; gap: .8rem; }
+.fn { width: var(--w); display: grid; grid-template-columns: 11rem minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 1.6rem; padding: 1.8rem 2.4rem; border-radius: var(--radius); background: var(--surface); }
+.fn:nth-child(2) { background: #dedcd6; }
+.fn:nth-child(3) { background: var(--ink); color: var(--bg); }
+.fn-n { grid-row: 1 / 3; align-self: center; white-space: nowrap; font-size: 4.4rem; line-height: 1; letter-spacing: -0.04em; color: inherit; }
+.fn-t { font-weight: 500; color: inherit; }
+.fn-d { font-size: 1.4rem; opacity: .7; }
+.fn:nth-child(-n+2) .fn-n, .fn:nth-child(-n+2) .fn-t { color: var(--ink); }
+/* figures */
+.fg { margin: 0; }
+.fg-box { overflow: hidden; border-radius: var(--radius); background: var(--ph); }
+.fg-box img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+/* what we heard */
+.page-content .heard { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin: 2.4rem 0 0; padding: 0; list-style: none; }
+.heard li { padding: 2rem; border-radius: var(--radius); background: var(--surface); font-size: 1.7rem; line-height: 1.35; color: var(--ink); }
+.who { display: block; margin-bottom: .8rem; font-size: 1.2rem; color: var(--muted); }
+/* insight -> decision */
+.decs { border-top: 1px solid var(--rule); }
+.dec { display: grid; grid-template-columns: 1fr 4rem 1fr; align-items: center; gap: 1.6rem; padding: 2rem 0; border-bottom: 1px solid var(--rule); }
+.dec p { margin: 0; }
+.dec-i { color: var(--body); }
+.dec-d { font-size: 1.8rem; font-weight: 500; color: var(--ink); }
+.dec-arrow { font-size: 2rem; text-align: center; color: var(--ink); }
+.dec--head { padding: 1.2rem 0; }
+.dec--head p { font-size: 1.2rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.reflect { margin: 2.4rem 0 0; padding: 2.4rem; border-left: 3px solid var(--ink); background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+.reflect p { margin: 0; font-size: 1.8rem; line-height: 1.45; color: var(--ink); }
+@media (max-width: 768px) {
+  .hmw, .pair { grid-template-columns: 1fr; }
+  .page-content .heard { grid-template-columns: 1fr 1fr; }
+  .fn { width: 100%; grid-template-columns: 6rem minmax(0, 1fr); }
+  .fn-n { font-size: 3.2rem; }
+  .dec { grid-template-columns: 1fr; gap: .4rem; }
+  .dec-arrow { text-align: left; transform: rotate(90deg); width: 2rem; }
+  .dec--head { display: none; }
+}
+
+/* design-tool canvas for large wireframe sheets: fixed frame, zoomed art you can pan */
+.canvas { margin: 0; overflow: hidden; border: 1px solid var(--rule); border-radius: 10px; background: #e9e9e6; box-shadow: 0 18px 40px -24px rgba(17,17,17,.35); }
+.canvas-bar { display: flex; align-items: center; gap: 1.2rem; padding: .9rem 1.2rem; background: #1e1e1e; color: #e6e6e6; font-size: 1.2rem; }
+.canvas-bar .bw-dots i { background: #555; }
+.canvas-file { flex: 1; text-align: center; }
+.canvas-zoom { opacity: .6; }
+.canvas-view { height: clamp(32rem, 42vw, 56rem); overflow: auto; cursor: grab; background-image: radial-gradient(#cfcfca 1px, transparent 1px); background-size: 16px 16px; }
+.canvas-view:focus { outline: 2px solid var(--ink); outline-offset: -2px; }
+.canvas-art { width: 170%; margin: 4rem; background: var(--ph); box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+.canvas-art img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
 /* ===== HOMEPAGE (after the references) ===== */
 .rhero { padding: 6rem 0 4.8rem; }
 .page-content .rhero-name {
