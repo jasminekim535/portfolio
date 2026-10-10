@@ -45,7 +45,11 @@ img, video { display: block; }
 /* ===== TOP NAV: name left, links centered, one button right ===== */
 .topbar { position: sticky; top: 0; z-index: 10; background: var(--bg); }
 .topbar-in { display: flex; align-items: center; gap: 2rem; max-width: var(--max-w); margin: 0 auto; padding: 1.6rem 5rem; font-size: 1.5rem; }
-.brand { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); }
+.brand {
+  display: grid; place-items: center; width: 3.6rem; height: 3.6rem; background: var(--ink); color: var(--bg);
+  font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em; transition: background .2s, color .2s, box-shadow .2s;
+}
+.brand:hover { background: var(--bg); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
 .topbar nav { display: flex; flex: 1; align-items: center; gap: 3.2rem; }
 .topbar nav a:first-child { margin-left: auto; }
 .topbar nav a { position: relative; padding: .3rem 0; color: var(--ink); }
@@ -107,11 +111,11 @@ img, video { display: block; }
 .foot-links a:hover { color: var(--accent); }
 
 /* ===== HOMEPAGE (after the references) ===== */
-.rhero { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1.6rem 4rem; padding: 6rem 0 4.8rem; }
+.rhero { padding: 6rem 0 4.8rem; }
 .page-content .rhero-name {
   margin: 0; font-size: clamp(5.6rem, 9.4vw, 13.6rem); line-height: .9; font-weight: 400; letter-spacing: -0.055em; color: var(--ink);
 }
-.rhero-desc { margin: 0 0 1.2rem; max-width: 30ch; font-size: 1.5rem; line-height: 1.45; color: var(--ink); }
+.rhero-desc { margin: 2rem 0 0; max-width: 60ch; font-size: 1.8rem; line-height: 1.45; color: var(--muted); }
 
 /* editorial label + text row */
 .rrow { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 4rem; padding: 2.4rem 0 5.6rem; border-top: 1px solid var(--rule); }
@@ -154,15 +158,12 @@ img, video { display: block; }
 .statement { max-width: 28ch; margin: 0; padding: 8rem 0; font-size: clamp(2.6rem, 3.4vw, 4rem); line-height: 1.2; letter-spacing: -0.03em; color: var(--ink); }
 
 /* work cards: no casing, image at its own proportions, text below */
-.wkgrid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4.8rem 2rem; }
-.wkgrid > .wk { grid-column: span 2; }
-.wkgrid > .wk:nth-child(-n+2) { grid-column: span 3; }   /* two on the first row, three on the second */
+.wkgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.8rem 2rem; }
 .wkgrid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3.2rem 2rem; align-items: start; }
-.masonry { columns: 4; column-gap: 2rem; }
-.masonry > .wk { break-inside: avoid; margin-bottom: 4rem; }
+.masonry { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4rem 2rem; }
 .wk { display: block; color: inherit; }
-.wk-img { overflow: hidden; background: var(--ph); }
-.wk-img img { display: block; width: 100%; height: auto; transition: transform .6s ease; }
+.wk-img { aspect-ratio: 4 / 3 !important; overflow: hidden; background: var(--ph); }   /* one size for every card */
+.wk-img img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .6s ease; }   /* whole image, never cropped */
 .wk:hover .wk-img img { transform: scale(1.02); }
 .page-content .wk-title { margin: 1.4rem 0 0; font-size: 1.8rem; line-height: 1.25; font-weight: 500; letter-spacing: -0.02em; color: var(--ink); }
 .wk:hover .wk-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
@@ -309,10 +310,7 @@ main.page { display: block; }
   .topbar-in { padding: 1.4rem 2.4rem; }
   .topbar nav { gap: 2.4rem; }
   .ngrid, .dgrid4, .dgrid3, .ways, .wkgrid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .wkgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .wkgrid > .wk, .wkgrid > .wk:nth-child(-n+2) { grid-column: auto; }
-  .wkgrid > .wk:first-child { grid-column: 1 / -1; }
-  .masonry { columns: 2; }
+  .wkgrid, .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dgrid3 > .dcard:last-child { grid-column: span 2; }
   .dgrid3 > .dcard:first-child { grid-column: span 2; }
   .about-intro, .about-two { grid-template-columns: 1fr; }
@@ -342,7 +340,7 @@ main.page { display: block; }
   .topbar nav a::after { display: none; }
   .topbar nav a[aria-current="page"] { color: var(--accent); }
   .wgrid, .dgrid3, .ways, .wkgrid { grid-template-columns: 1fr; }
-  .masonry { columns: 1; }
+  .masonry { grid-template-columns: 1fr; }
   .xlist a { grid-template-columns: 1fr; gap: .2rem; }
   .wcard--wide { grid-column: auto; }
   .wcard-img { height: auto; aspect-ratio: 16 / 10; }
