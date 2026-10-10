@@ -159,17 +159,17 @@ img, video { display: block; }
 /* hero project: first card spans two columns, same image height as its row neighbour */
 .wkgrid > .wk:first-child { grid-column: span 2; }
 .wkgrid > .wk:first-child .wk-img { aspect-ratio: 8.2 / 3 !important; }
-.page-content .wkgrid > .wk:first-child .wk-title { font-size: 2.4rem; }
+.page-content .wkgrid > .wk:first-child .wk-title { font-size: 3.4rem; }
 .wkgrid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3.2rem 2rem; align-items: start; }
 .masonry { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4rem 2rem; }
 .wk { display: block; color: inherit; }
 .wk-img { aspect-ratio: 4 / 3 !important; overflow: hidden; background: var(--ph); }   /* one size for every card */
 .wk-img img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .6s ease; }   /* whole image, never cropped */
 .wk:hover .wk-img img { transform: scale(1.02); }
-.page-content .wk-title { margin: 1.4rem 0 0; font-size: 1.8rem; line-height: 1.25; font-weight: 500; letter-spacing: -0.02em; color: var(--ink); }
+.page-content .wk-title { margin: 1.6rem 0 0; font-size: 2.6rem; line-height: 1.15; font-weight: 500; letter-spacing: -0.03em; color: var(--ink); }
 .wk:hover .wk-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
-.wk-sub { margin: .2rem 0 0; color: var(--muted); }
-.wkgrid4 .page-content .wk-title, .page-content .wkgrid4 .wk-title, .page-content .masonry .wk-title { font-size: 1.6rem; }
+.wk-sub { margin: .4rem 0 0; font-size: 1.5rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }   /* always one line */
+.page-content .wkgrid4 .wk-title, .page-content .masonry .wk-title { font-size: 2.2rem; }
 
 /* design cards: same panel as projects, smaller */
 .dgrid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
@@ -345,6 +345,8 @@ main.page { display: block; }
   .wkgrid > .wk:first-child { grid-column: auto; }
   .wkgrid > .wk:first-child .wk-img { aspect-ratio: 4 / 3 !important; }
   .masonry { grid-template-columns: 1fr; }
+  .wkgrid4 .wk-sub { font-size: 1.3rem; }
+  .page-content .wkgrid4 .wk-title { font-size: 1.9rem; }
   .xlist a { grid-template-columns: 1fr; gap: .2rem; }
   .wcard--wide { grid-column: auto; }
   .wcard-img { height: auto; aspect-ratio: 16 / 10; }
