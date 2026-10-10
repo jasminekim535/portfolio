@@ -156,6 +156,10 @@ img, video { display: block; }
 
 /* work cards: no casing, image at its own proportions, text below */
 .wkgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.8rem 2rem; }
+/* hero project: first card spans two columns, same image height as its row neighbour */
+.wkgrid > .wk:first-child { grid-column: span 2; }
+.wkgrid > .wk:first-child .wk-img { aspect-ratio: 8.2 / 3 !important; }
+.page-content .wkgrid > .wk:first-child .wk-title { font-size: 2.4rem; }
 .wkgrid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3.2rem 2rem; align-items: start; }
 .masonry { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4rem 2rem; }
 .wk { display: block; color: inherit; }
@@ -308,6 +312,7 @@ main.page { display: block; }
   .topbar nav { gap: 2.4rem; }
   .ngrid, .dgrid4, .dgrid3, .ways, .wkgrid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .wkgrid, .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wkgrid > .wk:first-child .wk-img { aspect-ratio: 8.4 / 3 !important; }
   .dgrid3 > .dcard:last-child { grid-column: span 2; }
   .dgrid3 > .dcard:first-child { grid-column: span 2; }
   .about-intro, .about-two { grid-template-columns: 1fr; }
@@ -337,6 +342,8 @@ main.page { display: block; }
   .topbar nav a::after { display: none; }
   .topbar nav a[aria-current="page"] { color: var(--accent); }
   .wgrid, .dgrid3, .ways, .wkgrid { grid-template-columns: 1fr; }
+  .wkgrid > .wk:first-child { grid-column: auto; }
+  .wkgrid > .wk:first-child .wk-img { aspect-ratio: 4 / 3 !important; }
   .masonry { grid-template-columns: 1fr; }
   .xlist a { grid-template-columns: 1fr; gap: .2rem; }
   .wcard--wide { grid-column: auto; }
