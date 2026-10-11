@@ -418,6 +418,9 @@ img, video { display: block; }
 .x-pts b { color: var(--ink); font-weight: 500; }
 .page-content .x-link { display: inline-block; margin-top: .8rem; font-size: 1.4rem; color: var(--ink); text-decoration: underline; text-underline-offset: .2em; }
 .about-two { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4rem; }
+.page-content .skills-t { margin: 0; font-size: 1.4rem; font-weight: 500; color: var(--muted); }
+.skills .chips li { font-size: 1.3rem; }
 .edu { display: flex; flex-direction: column; gap: .2rem; margin: 0; }
 
 /* designs: numbered tiles */
@@ -531,7 +534,8 @@ main.page { display: block; }
   .wkgrid > .wk:first-child .wk-img { aspect-ratio: 8.4 / 3 !important; }
   .dgrid3 > .dcard:last-child { grid-column: span 2; }
   .dgrid3 > .dcard:first-child { grid-column: span 2; }
-  .about-intro, .about-two { grid-template-columns: 1fr; }
+  .about-intro, .about-two, .skills { grid-template-columns: 1fr; }
+  .skills { gap: 2.4rem; }
   .wgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .rrow { grid-template-columns: 1fr; }
   .stats, .features, .page-content .process { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2rem; }
