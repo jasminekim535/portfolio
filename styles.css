@@ -454,10 +454,25 @@ img, video { display: block; }
 .concept-d { margin: 0 0 2rem; color: var(--muted); }
 .concept .heard-k { margin-bottom: 1rem; }
 .page-content .concept-sub { margin-top: 2.4rem; }
-.mail-strip { display: flex; gap: 1.2rem; overflow-x: auto; padding-bottom: 1.2rem; scroll-snap-type: x mandatory; }
-.mail { flex: 0 0 auto; width: 26rem; height: 64rem; margin: 0; overflow-y: auto; scroll-snap-align: start; scrollbar-width: thin; background: var(--ph); }
+.mail-hint { display: flex; flex-wrap: wrap; gap: .8rem 2.4rem; margin: 0 0 1.6rem; font-size: 1.3rem; color: var(--ink); }
+.mail-hint span { padding: .4rem 1.2rem; border-radius: 99px; background: var(--surface); }
+.mail-wrap { position: relative; }
+.mail-wrap::after { content: ""; position: absolute; top: 0; right: 0; bottom: 3.6rem; width: 8rem; background: linear-gradient(to right, rgba(242,242,240,0), var(--bg)); pointer-events: none; transition: opacity .3s; }
+.mail-wrap.at-end::after { opacity: 0; }
+.mail-strip { display: flex; gap: 1.6rem; overflow-x: auto; padding-bottom: 1.2rem; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+.mail-item { position: relative; flex: 0 0 auto; width: 26rem; margin: 0; scroll-snap-align: start; }
+.mail { height: 60rem; overflow-y: auto; scrollbar-width: thin; border-radius: var(--radius); background: var(--ph); }
 .mail img { display: block; width: 100%; height: auto; }
-@media (max-width: 600px) { .jgal, .jrow { gap: .6rem; } .mail { width: 22rem; height: 52rem; } }
+.mail-item::after { content: ""; position: absolute; left: 0; right: 0; top: calc(60rem - 10rem); height: 10rem; border-radius: 0 0 var(--radius) var(--radius); background: linear-gradient(rgba(17,17,17,0), rgba(17,17,17,.55)); pointer-events: none; transition: opacity .3s; }
+.mail-cue { position: absolute; left: 50%; top: calc(60rem - 4.8rem); transform: translateX(-50%); padding: .5rem 1.2rem; border-radius: 99px; background: var(--bg); color: var(--ink); font-size: 1.2rem; font-weight: 500; pointer-events: none; box-shadow: 0 4px 14px -6px rgba(17,17,17,.4); transition: opacity .3s; animation: mail-bob 1.8s ease-in-out infinite; }
+.mail-item.read::after, .mail-item.read .mail-cue { opacity: 0; }
+@keyframes mail-bob { 50% { transform: translate(-50%, .4rem); } }
+.mail-nav { position: absolute; top: 28rem; z-index: 2; width: 4.4rem; height: 4.4rem; border: 1px solid var(--ink); border-radius: 50%; background: var(--bg); color: var(--ink); font-size: 1.8rem; cursor: pointer; transition: opacity .2s; }
+.mail-prev { left: -2.2rem; } .mail-next { right: -2.2rem; }
+.mail-nav:disabled { opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .mail-cue { animation: none; } }
+@media (max-width: 768px) { .mail-prev { left: .4rem; } .mail-next { right: .4rem; } }
+@media (max-width: 600px) { .jgal, .jrow { gap: .6rem; } .mail-item { width: 22rem; } .mail { height: 48rem; } .mail-item::after { top: calc(48rem - 10rem); } .mail-cue { top: calc(48rem - 4.8rem); } .mail-nav { top: 22rem; } }
 @media (max-width: 768px) { .gal { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ===== HOMEPAGE (after the references) ===== */

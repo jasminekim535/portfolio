@@ -23,3 +23,22 @@ document.querySelectorAll('.canvas-view').forEach(function (v) {
   window.addEventListener('pointerup', function () { down = false; v.style.cursor = ''; });
   v.addEventListener('pointermove', function (e) { if (!down) return; v.scrollLeft = sl - (e.clientX - x); v.scrollTop = st - (e.clientY - y); });
 });
+
+// Email strip: arrows, end fade, and "Scroll ↓" cue that hides once read
+document.querySelectorAll('.mail-wrap').forEach(function (w) {
+  var strip = w.querySelector('.mail-strip'), prev = w.querySelector('.mail-prev'), next = w.querySelector('.mail-next');
+  function step() { var i = strip.querySelector('.mail-item'); return i ? i.offsetWidth + 16 : 280; }
+  function update() {
+    var max = strip.scrollWidth - strip.clientWidth - 2;
+    prev.disabled = strip.scrollLeft <= 2; next.disabled = strip.scrollLeft >= max;
+    w.classList.toggle('at-end', strip.scrollLeft >= max);
+  }
+  prev.addEventListener('click', function () { strip.scrollBy({ left: -step() * 2, behavior: 'smooth' }); });
+  next.addEventListener('click', function () { strip.scrollBy({ left: step() * 2, behavior: 'smooth' }); });
+  strip.addEventListener('scroll', update, { passive: true }); window.addEventListener('resize', update); update();
+  w.querySelectorAll('.mail').forEach(function (m) {
+    m.addEventListener('scroll', function () {
+      if (m.scrollTop + m.clientHeight >= m.scrollHeight - 40) m.parentNode.classList.add('read');
+    }, { passive: true });
+  });
+});
