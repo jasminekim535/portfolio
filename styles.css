@@ -287,14 +287,15 @@ img, video { display: block; }
 .tr-ins { margin-top: 3.2rem; }
 .page-content .tr-sub { margin-top: 4.8rem; }
 .tr-board { max-width: 72rem; margin-top: 2.4rem; }
-/* Travel Mate phones */
-.tm-phones { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2rem; margin-bottom: 1.6rem; }
-.tm-phones .phone-screen { background: #fff; }
-.tm-phones .shot-cap { margin-top: 1.2rem; }
-.tm-scr { position: relative; overflow: hidden; }
-.tm-bg { position: absolute; inset: 0; width: 100%; }
-.tm-dim { position: absolute; inset: 0; background: rgba(17, 17, 17, .45); }
-.phone-screen img.tm-sheet { position: absolute; left: 0; bottom: 0; width: 100%; border-radius: 1.6rem 1.6rem 0 0; }
+/* Travel Mate key screens */
+.tm-keys { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.6rem; }
+.tm-key { margin: 0; }
+.tm-key-box { aspect-ratio: 3 / 5; overflow: hidden; border-radius: var(--radius); background: var(--surface); display: flex; align-items: center; justify-content: center; padding: 1.2rem; }
+.tm-key img { display: block; max-width: 100%; border-radius: 6px; box-shadow: 0 8px 24px -12px rgba(17,17,17,.35); }
+.tm-key--full .tm-key-box { align-items: flex-start; padding-bottom: 0; }
+.tm-key--full img { width: 100%; border-radius: 6px 6px 0 0; }
+.pair--even { align-items: stretch; }
+.pair--even .fg-box { aspect-ratio: 4 / 3 !important; max-width: none !important; max-height: none; padding: 1.6rem; background: #fff; border: 1px solid var(--rule); }
 .page-content .tm-flow-h { margin-top: 6.4rem; }
 .tm-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3.2rem 2rem; margin-bottom: 3.2rem; }
 .tm-step { margin: 0; }
@@ -303,7 +304,7 @@ img, video { display: block; }
 .tm-step figcaption { display: grid; grid-template-columns: auto 1fr; column-gap: 1rem; margin-top: 1.2rem; font-size: 1.4rem; line-height: 1.4; color: var(--muted); }
 .tm-step figcaption .step-n { grid-row: span 2; }
 .tm-step figcaption b { font-weight: 500; color: var(--ink); }
-@media (max-width: 768px) { .tm-phones { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tm-flow { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .tm-keys { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tm-flow { grid-template-columns: 1fr; } }
 @media (max-width: 768px) {
   .ta, .mb, .csr--2 { grid-template-columns: 1fr; }
   .ta-img { max-width: 24rem; }

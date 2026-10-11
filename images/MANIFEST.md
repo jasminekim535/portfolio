@@ -137,11 +137,6 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/travel-mate/22-frame-1410151665.png` | Frame-1410151665.png | 1920×2178 |
 | `images/travel-mate/23-frame-1410151666.png` | Frame-1410151666.png | 760×442 |
 | `images/travel-mate/24-file.png` | -.png | 360×740 |
-| `images/travel-mate/25-png.jpg` | .png | 14316×8591 |
-| `images/travel-mate/26-png.jpg` | .png | 6352×3014 |
-| `images/travel-mate/27-file.png` | --.png | 32720×14143 |
-| `images/travel-mate/28-png.jpg` | .png | 19498×17324 |
-| `images/travel-mate/29-png.jpg` | ..png | 32768×11868 |
 | `images/travel-mate/30-home-screen.webp` | home screen cropped from --.jpg | 417×1383 |
 | `images/travel-mate/31-sheet-stay-dates.webp` | Frame-1410151663.png, edges trimmed | 328×416 |
 | `images/travel-mate/32-sheet-trip-dates.webp` | Frame-1410151427.png, edges trimmed | 496×370 |
