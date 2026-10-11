@@ -159,6 +159,14 @@ img, video { display: block; }
 .pg-screen { aspect-ratio: 3 / 4; overflow-y: auto; scrollbar-width: thin; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--ph); }
 .pg-screen img { display: block; width: 100%; height: auto; min-height: 100%; object-fit: cover; object-position: top; }
 .pg-screen:focus { outline: 2px solid var(--ink); outline-offset: 2px; }
+.why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin-top: 3.2rem; }
+.why > div, .tk > div { padding: 2.4rem; border-radius: var(--radius); background: var(--surface); }
+.page-content .why h4, .page-content .tk h3 { margin: 0 0 .8rem; font-size: 1.7rem; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
+.why p, .tk p { margin: 0; font-size: 1.5rem; line-height: 1.5; color: var(--body); }
+.takeaways { padding-top: 4.8rem; border-top: 2px solid var(--ink); }
+.takeaways .csr-k { margin-bottom: 1.6rem; }
+.tk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.tk .step-n { display: block; margin-bottom: 1.6rem; }
 .csr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin-bottom: 8rem; }
 .csr > div { padding: 2.4rem; border-radius: var(--radius); background: var(--surface); }
 .csr-k { display: inline-block; margin-bottom: 1.2rem; padding: .3rem 1rem; border-radius: 99px; background: var(--ink); color: var(--bg); font-size: 1.2rem; }
@@ -194,7 +202,7 @@ img, video { display: block; }
 .page-content .more-h { margin: 4rem 0 0; font-size: 1.4rem; font-weight: 500; color: var(--ink); }
 .more-h + .shots { margin-top: 1.2rem; }
 @media (max-width: 768px) {
-  .csr, .ba, .ds, .who { grid-template-columns: 1fr; }
+  .csr, .ba, .ds, .who, .why, .tk { grid-template-columns: 1fr; }
   .page-content .site-t { font-size: 4rem; }
   .site-head { gap: 1.6rem; }
   .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
