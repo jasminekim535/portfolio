@@ -166,17 +166,19 @@ img, video { display: block; }
 .more summary { display: inline-block; padding: .7rem 1.6rem; border: 1px solid var(--ink); border-radius: 99px; cursor: pointer; list-style: none; font-size: 1.4rem; color: var(--ink); }
 .more summary::-webkit-details-marker { display: none; }
 .more[open] summary { background: var(--ink); color: var(--bg); }
-.shots--more { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.shots--more, .shots--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.more-h { margin: 3.2rem 0 0; font-size: 1.4rem; font-weight: 500; color: var(--ink); }
+.more-h + .shots { margin-top: 1.2rem; }
 @media (max-width: 768px) {
   .csr, .ba, .ds { grid-template-columns: 1fr; }
   .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .shots--more { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .shots--more, .shots--5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .ni-hero { padding-bottom: 0; }
   .ni-hero-a { width: 100%; }
   .ni-hero-b { position: relative; width: 70%; margin: -12% 0 0 auto; }
   .ni-lede { font-size: 2rem; }
 }
-@media (max-width: 600px) { .shots--more { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .shots--more, .shots--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* ===== HFES STG CASE STUDY ===== */
 .hf-hero { margin-bottom: 6.4rem; }
