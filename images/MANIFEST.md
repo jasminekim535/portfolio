@@ -100,6 +100,14 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 |---|---|---|
 | `images/trendy/01-trendy.png` | trendy.png | 1909×1088 |
 | `images/trendy/02-title-pa2ge.png` | title_pa2ge.png | 1920×10179 |
+| `images/trendy/03-brand.webp` | title_pa2ge.png, brand section | 1920×386 |
+| `images/trendy/04-interviews.webp` | title_pa2ge.png, interviews section | 1920×981 |
+| `images/trendy/05-persona.webp` | title_pa2ge.png, persona section | 1920×625 |
+| `images/trendy/06-as-is-to-be.webp` | title_pa2ge.png, as is to be section | 1920×620 |
+| `images/trendy/07-competitor-research.webp` | title_pa2ge.png, competitor research section | 1920×1065 |
+| `images/trendy/08-journey-map.webp` | title_pa2ge.png, journey map section | 1920×868 |
+| `images/trendy/09-problem-solving.webp` | title_pa2ge.png, problem solving section | 1920×1084 |
+| `images/trendy/10-final-screens.webp` | title_pa2ge.png, final screens section | 1920×1127 |
 
 ## travel-mate.html — Travel Mate
 
@@ -134,6 +142,10 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/travel-mate/27-file.png` | --.png | 32720×14143 |
 | `images/travel-mate/28-png.jpg` | .png | 19498×17324 |
 | `images/travel-mate/29-png.jpg` | ..png | 32768×11868 |
+| `images/travel-mate/30-home-screen.webp` | home screen cropped from --.jpg | 417×1383 |
+| `images/travel-mate/31-sheet-stay-dates.webp` | Frame-1410151663.png, edges trimmed | 328×416 |
+| `images/travel-mate/32-sheet-trip-dates.webp` | Frame-1410151427.png, edges trimmed | 496×370 |
+| `images/travel-mate/33-sheet-transport.webp` | Frame-1410151666.png, edges trimmed | 496×287 |
 
 ## migrant-compass.html — Migrant Compass
 

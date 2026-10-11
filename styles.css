@@ -283,6 +283,19 @@ img, video { display: block; }
 .logo-box img { display: block; width: 100%; height: auto; }
 .mc-phones .phone { aspect-ratio: auto; }
 .csr--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* Trendy */
+.tr-ins { margin-top: 3.2rem; }
+.page-content .tr-sub { margin-top: 4.8rem; }
+.tr-board { max-width: 72rem; margin-top: 2.4rem; }
+/* Travel Mate phones */
+.tm-phones { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2rem; margin-bottom: 1.6rem; }
+.tm-phones .phone-screen { background: #fff; }
+.tm-phones .shot-cap { margin-top: 1.2rem; }
+.tm-scr { position: relative; overflow: hidden; }
+.tm-bg { position: absolute; inset: 0; width: 100%; }
+.tm-dim { position: absolute; inset: 0; background: rgba(17, 17, 17, .45); }
+.phone-screen img.tm-sheet { position: absolute; left: 0; bottom: 0; width: 100%; border-radius: 1.6rem 1.6rem 0 0; }
+@media (max-width: 768px) { .tm-phones { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 768px) {
   .ta, .mb, .csr--2 { grid-template-columns: 1fr; }
   .ta-img { max-width: 24rem; }
