@@ -371,11 +371,29 @@ img, video { display: block; }
 .wkgrid > .wk:first-child .wk-img { aspect-ratio: 8.2 / 3 !important; }
 .page-content .wkgrid > .wk:first-child .wk-title { font-size: 3.4rem; }
 .wkgrid--feat { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.wkgrid--feat > .wk:first-child .wk-img { aspect-ratio: 2.4 / 1 !important; }
-.wkgrid--feat > .wk:not(:first-child) .wk-img { aspect-ratio: 3 / 2 !important; }
+.wkgrid--feat .wk-img { aspect-ratio: 2 / 1 !important; background: none; }
+.wkgrid--feat > .wk:first-child .wk-img { aspect-ratio: 2000 / 1060 !important; }
+.wkgrid--feat .wk-img img { object-fit: cover; }   /* covers are ~2:1, so this trims at most a sliver */
 .page-content .wkgrid--feat > .wk:not(:first-child) .wk-title { font-size: 2.6rem; }
-.more { margin-top: 5.6rem; }
-.page-content .more-t { margin: 0 0 1.2rem; font-size: 1.4rem; font-weight: 500; color: var(--muted); }
+/* graphic & art: each piece at its own shape, one shared height, no empty frame */
+.gart { display: flex; flex-wrap: wrap; gap: 3.2rem 2.4rem; align-items: flex-start; }
+.ga { display: block; color: inherit; }
+.ga-img { height: 40rem; overflow: hidden; background: var(--ph); }
+.ga-img img { display: block; height: 100%; width: auto; transition: transform .6s ease; }
+.ga:hover .ga-img img { transform: scale(1.02); }
+.ga:hover .wk-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.page-content .gart .wk-title { margin-top: 1.2rem; font-size: 2rem; }
+.gart .wk-sub { margin-top: .2rem; font-size: 1.4rem; }
+@media (max-width: 1024px) {   /* share one row: widths follow each piece's shape */
+  .gart { flex-wrap: nowrap; gap: 1.2rem; }
+  .ga { flex: var(--r) 1 0; min-width: 0; }
+  .ga-img { height: auto; }
+  .ga-img img { width: 100%; height: auto; }
+}
+@media (max-width: 600px) {
+  .page-content .gart .wk-title { font-size: 1.5rem; }
+  .gart .wk-sub { display: none; }
+}
 .wkgrid4.wkgrid4--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .wkgrid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3.2rem 2rem; align-items: start; }
 .masonry { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4rem 2rem; }
@@ -541,7 +559,8 @@ main.page { display: block; }
   .ngrid, .dgrid4, .dgrid3, .ways, .wkgrid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .wkgrid, .masonry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .wkgrid > .wk:first-child .wk-img { aspect-ratio: 8.4 / 3 !important; }
-  .wkgrid--feat > .wk:first-child .wk-img { aspect-ratio: 2.4 / 1 !important; }
+  .wkgrid--feat > .wk:first-child .wk-img { aspect-ratio: 2000 / 1060 !important; }
+  .wkgrid--feat { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dgrid3 > .dcard:last-child { grid-column: span 2; }
   .dgrid3 > .dcard:first-child { grid-column: span 2; }
   .about-intro, .about-two, .skills { grid-template-columns: 1fr; }
@@ -574,7 +593,8 @@ main.page { display: block; }
   .topbar nav a[aria-current="page"] { color: var(--accent); }
   .wgrid, .dgrid3, .ways, .wkgrid { grid-template-columns: 1fr; }
   .wkgrid > .wk:first-child { grid-column: auto; }
-  .wkgrid > .wk:first-child .wk-img, .wkgrid--feat > .wk:first-child .wk-img { aspect-ratio: 4 / 3 !important; }
+  .wkgrid > .wk:first-child .wk-img { aspect-ratio: 4 / 3 !important; }
+  .wkgrid--feat > .wk:first-child .wk-img, .wkgrid--feat .wk-img { aspect-ratio: 2 / 1 !important; }
   .masonry { grid-template-columns: 1fr; }
   .wkgrid4 .wk-sub { font-size: 1.3rem; }
   .page-content .wkgrid4 .wk-title { font-size: 1.9rem; }
