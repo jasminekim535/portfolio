@@ -167,6 +167,9 @@ img, video { display: block; }
 .takeaways .csr-k { margin-bottom: 1.6rem; }
 .tk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
 .tk .step-n { display: block; margin-bottom: 1.6rem; }
+.why--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.page-content .proj-chips { margin: 3.2rem 0 0; }
+.page-content .ni-sec .stats { margin-top: 3.2rem; padding: 0; }
 .csr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin-bottom: 8rem; }
 .csr > div { padding: 2.4rem; border-radius: var(--radius); background: var(--surface); }
 .csr-k { display: inline-block; margin-bottom: 1.2rem; padding: .3rem 1rem; border-radius: 99px; background: var(--ink); color: var(--bg); font-size: 1.2rem; }
@@ -202,7 +205,7 @@ img, video { display: block; }
 .page-content .more-h { margin: 4rem 0 0; font-size: 1.4rem; font-weight: 500; color: var(--ink); }
 .more-h + .shots { margin-top: 1.2rem; }
 @media (max-width: 768px) {
-  .csr, .ba, .ds, .who, .why, .tk { grid-template-columns: 1fr; }
+  .csr, .ba, .ds, .who, .why, .why--2, .tk { grid-template-columns: 1fr; }
   .page-content .site-t { font-size: 4rem; }
   .site-head { gap: 1.6rem; }
   .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
