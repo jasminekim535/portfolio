@@ -392,7 +392,8 @@ img, video { display: block; }
 .about-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 4rem; align-items: start; padding-bottom: 2rem; }
 .about-photo { aspect-ratio: 1 / 1; overflow: hidden; border-radius: var(--radius); background: var(--ph); }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; }
-.about-bio p { margin: 0 0 1.6rem; max-width: 52ch; font-size: 1.8rem; line-height: 1.55; color: var(--ink); }
+.about-bio p { margin: 0 0 1.6rem; max-width: 40ch; font-size: 2.4rem; line-height: 1.35; letter-spacing: -0.015em; color: var(--ink); }
+.about-bio .about-seek { font-size: 1.6rem; color: var(--muted); }
 .about-bio .about-links { display: flex; flex-wrap: wrap; gap: .8rem; font-size: inherit; }
 .ways { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
 .way { padding: 2rem; border-radius: var(--radius); background: var(--surface); }
@@ -403,7 +404,7 @@ img, video { display: block; }
 .page-content .xlist { margin: 0; padding: 0; list-style: none; }
 .xlist li { border-bottom: 1px solid var(--rule); }
 .xlist li:first-child { border-top: 1px solid var(--rule); }
-.xlist a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 16rem; gap: 1.6rem; padding: 1.6rem 0; color: inherit; }
+.xlist a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 21rem; gap: 1.6rem; padding: 1.6rem 0; color: inherit; }
 .xlist a:hover .x-role { text-decoration: underline; text-underline-offset: .2em; }
 .x-role { color: var(--ink); font-weight: 500; }
 .x-org { color: var(--body); }
