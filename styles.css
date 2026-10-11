@@ -402,13 +402,21 @@ img, video { display: block; }
 .way p { margin: 0; color: var(--body); }
 .about-intro + .rsec, .rsec + .rsec { margin-top: 6.4rem; }
 .page-content .xlist { margin: 0; padding: 0; list-style: none; }
-.xlist li { border-bottom: 1px solid var(--rule); }
-.xlist li:first-child { border-top: 1px solid var(--rule); }
-.xlist .xrow, .xlist a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 21rem; gap: 1.6rem; padding: 1.6rem 0; color: inherit; }
-.xlist a:hover .x-role { text-decoration: underline; text-underline-offset: .2em; }
+.xlist > li { border-bottom: 1px solid var(--rule); }
+.xlist > li:first-child { border-top: 1px solid var(--rule); }
+.xlist .xrow, .xlist > li > a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 21rem; gap: 1.6rem; padding: 1.6rem 0; color: inherit; }
+.xlist > li > a:hover .x-role { text-decoration: underline; text-underline-offset: .2em; }
 .x-role { color: var(--ink); font-weight: 500; }
 .x-org { color: var(--body); }
 .x-date { color: var(--muted); white-space: nowrap; text-align: right; }
+.xlist--detail .xrow { row-gap: .8rem; padding: 2rem 0; }
+.x-body { grid-column: 2 / -1; }
+.page-content .x-pts { margin: 0; padding: 0; list-style: none; color: var(--body); font-size: 1.5rem; line-height: 1.5; }
+.x-pts li { position: relative; padding-left: 1.4rem; }
+.x-pts li + li { margin-top: .4rem; }
+.x-pts li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
+.x-pts b { color: var(--ink); font-weight: 500; }
+.page-content .x-link { display: inline-block; margin-top: .8rem; font-size: 1.4rem; color: var(--ink); text-decoration: underline; text-underline-offset: .2em; }
 .about-two { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
 .edu { display: flex; flex-direction: column; gap: .2rem; margin: 0; }
 
@@ -555,7 +563,9 @@ main.page { display: block; }
   .masonry { grid-template-columns: 1fr; }
   .wkgrid4 .wk-sub { font-size: 1.3rem; }
   .page-content .wkgrid4 .wk-title { font-size: 1.9rem; }
-  .xlist a { grid-template-columns: 1fr; gap: .2rem; }
+  .xlist > li > a, .xlist .xrow { grid-template-columns: 1fr; gap: .2rem; }
+  .x-date { text-align: left; }
+  .x-body { grid-column: auto; margin-top: .8rem; }
   .wcard--wide { grid-column: auto; }
   .wcard-img { height: auto; aspect-ratio: 16 / 10; }
   .statement { padding: 5.6rem 0; }
