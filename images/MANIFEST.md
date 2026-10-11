@@ -356,6 +356,12 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/142-1.91-1-revolutionize.webp` | Supplement upload | 1200×628 |
 | `images/day-guard/143-1-1-bloats.webp` | Supplement upload | 1000×1000 |
 | `images/day-guard/144-1.91-1-bloats.webp` | Supplement upload | 1200×628 |
+| `images/day-guard/145-9-16-bye-bye-puffy-face.webp` | Jelly Stick upload (recovered from history) | 800×1422 |
+| `images/day-guard/146-1-1-bye-bye-puffy-face.webp` | Jelly Stick upload (recovered from history) | 1000×1000 |
+| `images/day-guard/147-1.91-1-bye-bye-puffy-face.webp` | Jelly Stick upload (recovered from history) | 1200×628 |
+| `images/day-guard/148-9-16-own-your-morning.webp` | Jelly Stick upload (recovered from history) | 800×1422 |
+| `images/day-guard/149-1-1-own-your-morning.webp` | Jelly Stick upload (recovered from history) | 1000×1000 |
+| `images/day-guard/150-1.91-1-own-your-morning.webp` | Jelly Stick upload (recovered from history) | 1200×628 |
 
 ## playing-cards.html — Playing Cards
 
