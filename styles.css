@@ -396,8 +396,8 @@ img, video { display: block; }
 .dcard .chips li { font-size: 1rem; }
 
 /* About page */
-.about-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 4rem; align-items: start; padding-bottom: 2rem; }
-.about-photo { aspect-ratio: 1 / 1; overflow: hidden; border-radius: var(--radius); background: var(--ph); }
+.about-intro { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; align-items: start; padding-bottom: 2rem; }
+.about-photo { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius); background: var(--ph); }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; }
 .about-bio p { margin: 0 0 1.6rem; max-width: 40ch; font-size: 2.4rem; line-height: 1.35; letter-spacing: -0.015em; color: var(--ink); }
 .about-bio .about-seek { font-size: 1.6rem; color: var(--muted); }
@@ -537,6 +537,7 @@ main.page { display: block; }
   .dgrid3 > .dcard:last-child { grid-column: span 2; }
   .dgrid3 > .dcard:first-child { grid-column: span 2; }
   .about-intro, .about-two, .skills { grid-template-columns: 1fr; }
+  .about-photo { max-width: 40rem; }
   .skills { gap: 2.4rem; }
   .wgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .rrow { grid-template-columns: 1fr; }
