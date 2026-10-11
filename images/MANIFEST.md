@@ -100,14 +100,14 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 |---|---|---|
 | `images/trendy/01-trendy.png` | trendy.png | 1909×1088 |
 | `images/trendy/02-title-pa2ge.png` | title_pa2ge.png | 1920×10179 |
-| `images/trendy/03-brand.webp` | title_pa2ge.png, brand section | 1920×386 |
-| `images/trendy/04-interviews.webp` | title_pa2ge.png, interviews section | 1920×981 |
-| `images/trendy/05-persona.webp` | title_pa2ge.png, persona section | 1920×625 |
-| `images/trendy/06-as-is-to-be.webp` | title_pa2ge.png, as is to be section | 1920×620 |
-| `images/trendy/07-competitor-research.webp` | title_pa2ge.png, competitor research section | 1920×1065 |
-| `images/trendy/08-journey-map.webp` | title_pa2ge.png, journey map section | 1920×868 |
-| `images/trendy/09-problem-solving.webp` | title_pa2ge.png, problem solving section | 1920×1084 |
-| `images/trendy/10-final-screens.webp` | title_pa2ge.png, final screens section | 1920×1127 |
+| `images/trendy/03-brand.webp` | title_pa2ge.png, brand section | 1644×482 |
+| `images/trendy/04-interviews.webp` | title_pa2ge.png, interviews section | 1683×921 |
+| `images/trendy/05-persona.webp` | title_pa2ge.png, persona section | 1700×721 |
+| `images/trendy/06-as-is-to-be.webp` | title_pa2ge.png, as is to be section | 1360×715 |
+| `images/trendy/07-competitor-research.webp` | title_pa2ge.png, competitor research section | 1762×1160 |
+| `images/trendy/08-journey-map.webp` | title_pa2ge.png, journey map section | 1700×899 |
+| `images/trendy/09-problem-solving.webp` | title_pa2ge.png, problem solving section | 1844×1017 |
+| `images/trendy/10-final-screens.webp` | title_pa2ge.png, final screens section | 1888×1127 |
 
 ## travel-mate.html — Travel Mate
 
