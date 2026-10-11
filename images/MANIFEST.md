@@ -235,12 +235,12 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/20-1.91-1-3.png` | 1.91_1-3.png | 6876×3600 |
 | `images/day-guard/21-1.91-1-4.png` | 1.91_1-4.png | 6876×3600 |
 | `images/day-guard/22-1.91-1.png` | 1.91_1.png | 6876×3600 |
-| `images/day-guard/23-whiskey-email.png` | Whiskey-Email.png | 895×7125 |
+| `images/day-guard/23-whiskey-email.webp` | Whiskey-Email.png | 800×6369 |
 | `images/day-guard/24-superbowl-email.png` | Superbowl-Email.png | 2120×10667 |
-| `images/day-guard/25-chat-gpt.png` | chat-gpt.png | 1887×10149 |
+| `images/day-guard/25-chat-gpt.webp` | chat-gpt.png | 800×4303 |
 | `images/day-guard/26-saint-pattys-day.png` | saint-pattys-day.png | 1637×7890 |
 | `images/day-guard/27-bundle-deal.png` | bundle-deal.png | 2408×8336 |
-| `images/day-guard/28-frame-427323878.png` | Frame-427323878.png | 1880×17289 |
+| `images/day-guard/28-frame-427323878.webp` | Frame-427323878.png | 800×7357 |
 | `images/day-guard/29-hf-20260210-005820-c95cf3af-ccdc-4bba-82.mp4` | hf_20260210_005820_c95cf3af-ccdc-4bba-82f0-e98c6af54978.mp4 | 1292×1604 |
 | `images/day-guard/30-hf-20260211-045005-08bbd2ba-224d-47a0-8c.jpeg` | hf_20260211_045005_08bbd2ba-224d-47a0-8c24-92bf9dd1ee18.jpeg | 1856×2304 |
 | `images/day-guard/31-instagram-post-51.png` | Instagram-post---51.png | 1080×1350 |
