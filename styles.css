@@ -295,7 +295,15 @@ img, video { display: block; }
 .tm-bg { position: absolute; inset: 0; width: 100%; }
 .tm-dim { position: absolute; inset: 0; background: rgba(17, 17, 17, .45); }
 .phone-screen img.tm-sheet { position: absolute; left: 0; bottom: 0; width: 100%; border-radius: 1.6rem 1.6rem 0 0; }
-@media (max-width: 768px) { .tm-phones { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.page-content .tm-flow-h { margin-top: 6.4rem; }
+.tm-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3.2rem 2rem; margin-bottom: 3.2rem; }
+.tm-step { margin: 0; }
+.tm-step-img { aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; padding: 1.2rem; border-radius: var(--radius); background: #fff; border: 1px solid var(--rule); }
+.tm-step-img img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+.tm-step figcaption { display: grid; grid-template-columns: auto 1fr; column-gap: 1rem; margin-top: 1.2rem; font-size: 1.4rem; line-height: 1.4; color: var(--muted); }
+.tm-step figcaption .step-n { grid-row: span 2; }
+.tm-step figcaption b { font-weight: 500; color: var(--ink); }
+@media (max-width: 768px) { .tm-phones { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tm-flow { grid-template-columns: 1fr; } }
 @media (max-width: 768px) {
   .ta, .mb, .csr--2 { grid-template-columns: 1fr; }
   .ta-img { max-width: 24rem; }
