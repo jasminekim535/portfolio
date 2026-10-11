@@ -117,6 +117,9 @@ img, video { display: block; }
 .bw-screen { aspect-ratio: 16 / 10; overflow: hidden; background: var(--ph); }
 .bw-screen img { display: block; width: 100%; height: auto; min-height: 100%; object-fit: cover; object-position: top; }
 .bw-scroll { overflow-y: auto; scrollbar-width: thin; }
+.bw-fit { overflow: hidden; }
+.bw-fit img { min-height: 0; height: 100%; object-fit: contain; }
+.bw { margin-inline: auto; }
 .bw-scroll:focus { outline: 2px solid var(--ink); outline-offset: -2px; }
 .bw-lg .bw-screen { aspect-ratio: 16 / 9; }
 .bw-sm .bw-bar { padding: .6rem .8rem; gap: .6rem; }
