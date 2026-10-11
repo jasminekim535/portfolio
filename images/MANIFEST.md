@@ -199,8 +199,8 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/designs/01-9-16.png` | 9_16.png | 2160×3840 |
 | `images/designs/02-playing-cards-page-2.jpg` | playing-cards_Page_2.jpg | 2200×3400 |
 | `images/designs/03-king-poster.jpg` | king-poster-.jpg | 3456×8064 |
-| `images/designs/04-king-mfa-sign.webp` | print-copy_Page_4.jpg, sign photo cropped | 764×545 |
-| `images/designs/05-playing-cards-spread.webp` | IMG_2250.jpeg, center crop | 1183×1000 |
+| `images/designs/04-king-mfa-sign.webp` | print-copy_Page_4.jpg, sign photo cropped 4:3 | 727×545 |
+| `images/designs/05-playing-cards-spread.webp` | IMG_2250.jpeg | 1600×1200 |
 | `images/designs/04-jasmine-poster.jpg` | Jasmine-poster.jpg | 5148×8008 |
 | `images/designs/05-posters-final-page-1.jpg` | posters-final_Page_1.jpg | 4850×7250 |
 | `images/designs/06-typeface-page-4.jpg` | typeface_Page_4.jpg | 2200×3400 |

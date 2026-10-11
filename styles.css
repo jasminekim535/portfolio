@@ -399,6 +399,8 @@ img, video { display: block; }
 .bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 5.6rem 2rem; margin-top: 2.4rem; }
 .bn { grid-column: span var(--span); display: block; color: inherit; }
 .bn-img { overflow: hidden; background: var(--ph); }
+.bn .bn-cover { height: auto !important; }
+.bn-cover img { object-fit: cover !important; }
 .bn--xl .bn-img { height: clamp(32rem, 40vw, 56rem); }
 .bn--lg .bn-img { height: clamp(28rem, 32vw, 44rem); }
 .bn--md .bn-img { height: clamp(24rem, 26vw, 36rem); }
