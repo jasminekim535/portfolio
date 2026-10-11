@@ -168,6 +168,17 @@ img, video { display: block; }
 .tk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
 .tk .step-n { display: block; margin-bottom: 1.6rem; }
 .page-content .proj-chips { margin: 3.2rem 0 0; }
+.hf-cardsort { max-width: 72rem; }
+.sitemap { margin: 4rem 0 6.4rem; padding: 3.2rem; border-radius: var(--radius); background: var(--surface); }
+.page-content .sitemap ul { margin: 0; padding: 0; list-style: none; }
+.sm-root { width: fit-content; margin: 0 auto 2.4rem; padding: .8rem 2rem; border-radius: 99px; background: var(--ink); color: var(--bg); font-size: 1.4rem; font-weight: 500; }
+.sm-cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.2rem; padding-top: 2.4rem; border-top: 1px solid var(--ink); }
+.sm-node { margin: 0 0 1.2rem; padding: 1rem 1.2rem; border-radius: 6px; background: var(--bg); border: 1px solid var(--ink); font-size: 1.4rem; font-weight: 500; line-height: 1.3; color: var(--ink); }
+.page-content .sm-col > ul > li { margin-bottom: .8rem; padding: .8rem 1.2rem; border-radius: 6px; background: var(--bg); font-size: 1.3rem; line-height: 1.35; color: var(--body); }
+.page-content .sm-col li ul { margin-top: .6rem; padding-left: 1rem; border-left: 1px solid var(--rule); }
+.page-content .sm-col li li { padding: .2rem 0; font-size: 1.2rem; color: var(--muted); }
+.sitemap .shot-cap { margin-top: 2rem; }
+.tk--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .page-content .ni-sec .stats { margin-top: 3.2rem; padding: 0; }
 .csr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin-bottom: 8rem; }
 .csr > div { padding: 2.4rem; border-radius: var(--radius); background: var(--surface); }
@@ -205,6 +216,8 @@ img, video { display: block; }
 .more-h + .shots { margin-top: 1.2rem; }
 @media (max-width: 768px) {
   .csr, .ba, .ds, .who, .why, .tk { grid-template-columns: 1fr; }
+  .sm-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sitemap { padding: 2rem; }
   .page-content .site-t { font-size: 4rem; }
   .site-head { gap: 1.6rem; }
   .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
