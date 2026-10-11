@@ -231,10 +231,10 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/16-1-1-3.png` | 1_1-3.png | 3600×3600 |
 | `images/day-guard/17-1-1-4.png` | 1_1-4.png | 3600×3600 |
 | `images/day-guard/18-1-1.png` | 1_1.png | 3600×3600 |
-| `images/day-guard/19-1.91-1-1.png` | 1.91_1-1.png | 6876×3600 |
-| `images/day-guard/20-1.91-1-3.png` | 1.91_1-3.png | 6876×3600 |
+| `images/day-guard/19-1.91-1-1.webp` | 1.91_1-1.png | 1200×628 |
+| `images/day-guard/20-1.91-1-3.webp` | 1.91_1-3.png | 1200×628 |
 | `images/day-guard/21-1.91-1-4.webp` | 1.91_1-4.png | 1200×628 |
-| `images/day-guard/22-1.91-1.png` | 1.91_1.png | 6876×3600 |
+| `images/day-guard/22-1.91-1.webp` | 1.91_1.png | 1200×628 |
 | `images/day-guard/23-whiskey-email.webp` | Whiskey-Email.png | 800×6369 |
 | `images/day-guard/24-superbowl-email.png` | Superbowl-Email.png | 2120×10667 |
 | `images/day-guard/25-chat-gpt.webp` | chat-gpt.png | 800×4303 |
@@ -306,7 +306,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/91-1.91-1-1-3.png` | 1.91_1-1-3.png | 3438×1800 |
 | `images/day-guard/92-1.91-1-1-4.png` | 1.91_1-1-4.png | 3438×1800 |
 | `images/day-guard/93-1.91-1-1-5.webp` | 1.91_1-1-5.png | 1200×628 |
-| `images/day-guard/94-1.91-1-1-6.png` | 1.91_1-1-6.png | 3438×1800 |
+| `images/day-guard/94-1.91-1-1-6.webp` | 1.91_1-1-6.png | 1200×628 |
 | `images/day-guard/95-1.91-1-1-7.png` | 1.91_1-1-7.png | 3438×1800 |
 | `images/day-guard/96-1.91-1-1-8.png` | 1.91_1-1-8.png | 3438×1800 |
 | `images/day-guard/97-1.91-1-1-9.png` | 1.91_1-1-9.png | 3438×1800 |
@@ -315,11 +315,11 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/100-1.91-1-2-3.png` | 1.91_1-2-3.png | 3438×1800 |
 | `images/day-guard/101-1.91-1-2-4.png` | 1.91_1-2-4.png | 3438×1800 |
 | `images/day-guard/102-1.91-1-2-5.png` | 1.91_1-2-5.png | 3438×1800 |
-| `images/day-guard/103-9-16-1-1.png` | 9_16-1-1.png | 1080×1920 |
+| `images/day-guard/103-9-16-1-1.webp` | 9_16-1-1.png | 800×1422 |
 | `images/day-guard/104-9-16-2-1.png` | 9_16-2-1.png | 1080×1920 |
 | `images/day-guard/105-9-16-3-1.png` | 9_16-3-1.png | 1080×1920 |
 | `images/day-guard/106-9-16-4-1.png` | 9_16-4-1.png | 1080×1920 |
-| `images/day-guard/107-1-1-1-2.png` | 1_1-1-2.png | 1800×1800 |
+| `images/day-guard/107-1-1-1-2.webp` | 1_1-1-2.png | 1000×1000 |
 | `images/day-guard/108-1-1-2-2.png` | 1_1-2-2.png | 1800×1800 |
 | `images/day-guard/109-1-1-3-2.png` | 1_1-3-2.png | 1800×1800 |
 | `images/day-guard/110-1-1-4-2.png` | 1_1-4-2.png | 1800×1800 |
