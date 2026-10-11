@@ -248,7 +248,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/33-9-16-4-1.png` | 9_16-4-1.png | 1080×1920 |
 | `images/day-guard/34-9-16-7-1.png` | 9_16-7-1.png | 1080×1920 |
 | `images/day-guard/35-9-16-9-1.png` | 9_16-9-1.png | 1080×1920 |
-| `images/day-guard/36-1-1-1-2.png` | 1_1-1-2.png | 1800×1800 |
+| `images/day-guard/36-1-1-1-2.webp` | 1_1-1-2.png | 1000×1000 |
 | `images/day-guard/37-1-1-4-2.png` | 1_1-4-2.png | 1800×1800 |
 | `images/day-guard/38-1-1-7-2.png` | 1_1-7-2.png | 1800×1800 |
 | `images/day-guard/39-1-1-9-2.png` | 1_1-9-2.png | 1800×1800 |
@@ -351,6 +351,11 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/136-1.91-1-4.png` | 1.91_1-4.png | 6876×3600 |
 | `images/day-guard/137-1.91-1-5.png` | 1.91_1-5.png | 6876×3600 |
 | `images/day-guard/138-1.91-1-1.png` | 1.91_1-1.png | 6876×3600 |
+| `images/day-guard/140-9-16-revolutionize.webp` | Supplement upload | 800×1422 |
+| `images/day-guard/141-1-1-revolutionize.webp` | Supplement upload | 1000×1000 |
+| `images/day-guard/142-1.91-1-revolutionize.webp` | Supplement upload | 1200×628 |
+| `images/day-guard/143-1-1-bloats.webp` | Supplement upload | 1000×1000 |
+| `images/day-guard/144-1.91-1-bloats.webp` | Supplement upload | 1200×628 |
 
 ## playing-cards.html — Playing Cards
 
