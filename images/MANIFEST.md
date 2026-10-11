@@ -233,7 +233,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/18-1-1.png` | 1_1.png | 3600×3600 |
 | `images/day-guard/19-1.91-1-1.png` | 1.91_1-1.png | 6876×3600 |
 | `images/day-guard/20-1.91-1-3.png` | 1.91_1-3.png | 6876×3600 |
-| `images/day-guard/21-1.91-1-4.png` | 1.91_1-4.png | 6876×3600 |
+| `images/day-guard/21-1.91-1-4.webp` | 1.91_1-4.png | 1200×628 |
 | `images/day-guard/22-1.91-1.png` | 1.91_1.png | 6876×3600 |
 | `images/day-guard/23-whiskey-email.webp` | Whiskey-Email.png | 800×6369 |
 | `images/day-guard/24-superbowl-email.png` | Superbowl-Email.png | 2120×10667 |
@@ -323,7 +323,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/108-1-1-2-2.png` | 1_1-2-2.png | 1800×1800 |
 | `images/day-guard/109-1-1-3-2.png` | 1_1-3-2.png | 1800×1800 |
 | `images/day-guard/110-1-1-4-2.png` | 1_1-4-2.png | 1800×1800 |
-| `images/day-guard/111-1.91-1-1-3.png` | 1.91_1-1-3.png | 3438×1800 |
+| `images/day-guard/111-1.91-1-1-3.webp` | 1.91_1-1-3.png | 1200×628 |
 | `images/day-guard/112-1.91-1-2-3.png` | 1.91_1-2-3.png | 3438×1800 |
 | `images/day-guard/113-1.91-1-3-3.png` | 1.91_1-3-3.png | 3438×1800 |
 | `images/day-guard/114-1.91-1-4-3.png` | 1.91_1-4-3.png | 3438×1800 |
