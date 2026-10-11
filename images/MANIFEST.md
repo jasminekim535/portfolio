@@ -40,23 +40,20 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/now-institute/10-landing-page.webp` | nowinstitute.org home, full page @2x | 2880×7500 |
 | `images/now-institute/10-landing-page-mobile.webp` | nowinstitute.org home, phone full page @2x | 780×10402 |
 | `images/now-institute/11-about.webp` | nowinstitute.org/about-overview full page @2x | 2880×3960 |
-| `images/now-institute/12-contact.png` | contact.png | 1440×421 |
-| `images/now-institute/13-nav-bar.png` | Nav-bar.png | 1440×437 |
-| `images/now-institute/14-footer.png` | footer.png | 1480×440 |
 | `images/now-institute/15-people.webp` | nowinstitute.org/people full page @2x | 2880×4678 |
 | `images/now-institute/16-projects.webp` | nowinstitute.org/projects full page @2x | 2880×4338 |
 | `images/now-institute/17-publications.webp` | nowinstitute.org/publications full page @2x | 2880×4160 |
-| `images/now-institute/18-research.webp` | nowinstitute.org/research full page @2x | 2880×1880 |
+| `images/now-institute/18-research.webp` | nowinstitute.org/research full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/19-thom-mayne.webp` | nowinstitute.org/people/thom-mayne full page @2x | 2880×7940 |
 | `images/now-institute/20-eui-sung-yi.webp` | nowinstitute.org/people/eui-sung-yi full page @2x | 2880×7044 |
-| `images/now-institute/21-research-staff.webp` | nowinstitute.org/people/research-staff full page @2x | 2880×3010 |
+| `images/now-institute/21-research-staff.webp` | nowinstitute.org/people/research-staff full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/22-partners-advisors.webp` | nowinstitute.org/people/partners-advisors full page @2x | 2880×6460 |
-| `images/now-institute/23-project-art-by-wash.webp` | nowinstitute.org/projects/art-by-wash full page @2x | 2880×3292 |
+| `images/now-institute/23-project-art-by-wash.webp` | nowinstitute.org/projects/art-by-wash full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/24-project-building-forward-regulatory-reform.webp` | nowinstitute.org/projects/building-forward-regulatory-reform full page @2x | 2880×4734 |
 | `images/now-institute/25-project-culture-now.webp` | nowinstitute.org/projects/culture-now full page @2x | 2880×4458 |
 | `images/now-institute/26-project-haiti-now.webp` | nowinstitute.org/projects/haiti-now full page @2x | 2880×8776 |
 | `images/now-institute/27-project-hsinta-ecological-powerplant.webp` | nowinstitute.org/projects/hsinta-ecological-powerplant full page @2x | 2880×5166 |
-| `images/now-institute/28-project-irwindale-now.webp` | nowinstitute.org/projects/irwindale-now full page @2x | 2880×3810 |
+| `images/now-institute/28-project-irwindale-now.webp` | nowinstitute.org/projects/irwindale-now full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/29-project-la-now.webp` | nowinstitute.org/projects/la-now full page @2x | 2880×11190 |
 | `images/now-institute/30-project-madrid-now.jpg` | nowinstitute.org/projects/madrid-now full page @2x | 2880×16496 |
 | `images/now-institute/31-project-new-orleans-now.webp` | nowinstitute.org/projects/new-orleans-now full page @2x | 2880×10812 |
@@ -64,23 +61,23 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/now-institute/33-project-south-sea-pearl-artificial-island.webp` | nowinstitute.org/projects/south-sea-pearl-artificial-island full page @2x | 2880×5808 |
 | `images/now-institute/34-project-unhoused-housing.webp` | nowinstitute.org/projects/unhoused-housing full page @2x | 2880×8846 |
 | `images/now-institute/35-project-urban-hydroponics-south-la.webp` | nowinstitute.org/projects/urban-hydroponics-south-la full page @2x | 2880×5508 |
-| `images/now-institute/36-publication-100-buildings.webp` | nowinstitute.org/publications/100-buildings full page @2x | 2880×3352 |
+| `images/now-institute/36-publication-100-buildings.webp` | nowinstitute.org/publications/100-buildings full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/37-publication-cap-haitien-now.webp` | nowinstitute.org/publications/cap-haitien-now full page @2x | 2880×4184 |
 | `images/now-institute/38-publication-culture-now.webp` | nowinstitute.org/publications/culture-now full page @2x | 2880×3988 |
 | `images/now-institute/39-publication-haiti-now.webp` | nowinstitute.org/publications/haiti-now full page @2x | 2880×4056 |
-| `images/now-institute/40-publication-la-now-volume-one.webp` | nowinstitute.org/publications/la-now-volume-one full page @2x | 2880×3548 |
-| `images/now-institute/41-publication-la-now-volume-two.webp` | nowinstitute.org/publications/la-now-volume-two full page @2x | 2880×3160 |
-| `images/now-institute/42-publication-la-now-volume-three.webp` | nowinstitute.org/publications/la-now-volume-three full page @2x | 2880×2964 |
-| `images/now-institute/43-publication-la-now-grand-challenge.webp` | nowinstitute.org/publications/la-now-grand-challenge full page @2x | 2880×3686 |
+| `images/now-institute/40-publication-la-now-volume-one.webp` | nowinstitute.org/publications/la-now-volume-one full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/41-publication-la-now-volume-two.webp` | nowinstitute.org/publications/la-now-volume-two full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/42-publication-la-now-volume-three.webp` | nowinstitute.org/publications/la-now-volume-three full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/43-publication-la-now-grand-challenge.webp` | nowinstitute.org/publications/la-now-grand-challenge full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/44-publication-la-now-wilshire-boulevard.webp` | nowinstitute.org/publications/la-now-wilshire-boulevard full page @2x | 2880×3862 |
 | `images/now-institute/45-publication-madrid-now.webp` | nowinstitute.org/publications/madrid-now full page @2x | 2880×3888 |
-| `images/now-institute/46-publication-mir.webp` | nowinstitute.org/publications/mir full page @2x | 2880×3104 |
-| `images/now-institute/47-publication-now-quarterly-1.webp` | nowinstitute.org/publications/now-quarterly-1 full page @2x | 2880×3696 |
-| `images/now-institute/48-publication-now-quarterly-2.webp` | nowinstitute.org/publications/now-quarterly-2 full page @2x | 2880×3484 |
-| `images/now-institute/49-research-post-industrial-city.webp` | nowinstitute.org/research/post-industrial-city full page @2x | 2880×2654 |
+| `images/now-institute/46-publication-mir.webp` | nowinstitute.org/publications/mir full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/47-publication-now-quarterly-1.webp` | nowinstitute.org/publications/now-quarterly-1 full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/48-publication-now-quarterly-2.webp` | nowinstitute.org/publications/now-quarterly-2 full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/49-research-post-industrial-city.webp` | nowinstitute.org/research/post-industrial-city full page @2x, 1440×1920 window | 2880×3840 |
 | `images/now-institute/50-research-emerging-asia.webp` | nowinstitute.org/research/emerging-asia full page @2x | 2880×3878 |
-| `images/now-institute/51-research-informal-settlements.webp` | nowinstitute.org/research/informal-settlements full page @2x | 2880×3422 |
-| `images/now-institute/52-contact-page.webp` | nowinstitute.org/contact full page @2x | 2880×1800 |
+| `images/now-institute/51-research-informal-settlements.webp` | nowinstitute.org/research/informal-settlements full page @2x, 1440×1920 window | 2880×3840 |
+| `images/now-institute/52-contact-page.webp` | nowinstitute.org/contact full page @2x, 1440×1920 window | 2880×3840 |
 
 ## hfes-stg.html — HFES STG
 
