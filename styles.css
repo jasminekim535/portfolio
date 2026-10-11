@@ -301,7 +301,8 @@ img, video { display: block; }
   .ta-img { max-width: 24rem; }
   .logo-box { padding: 2.4rem; }
 }
-.mc-phones .phone-screen { height: auto; aspect-ratio: 435 / 853; background: #fff; }
+.mc-phones .phone-screen { height: auto; aspect-ratio: 400 / 849; padding-top: 16%; border-radius: 2rem; background: var(--sb, #fff); }
+.mc-phones .phone::before { top: 1.4rem; width: 26%; height: 1.3rem; }
 .pz { padding: 3.2rem; border-radius: var(--radius); background: var(--surface); }
 .pz-who { display: flex; align-items: center; gap: 1.6rem; }
 .pz-av { display: inline-flex; flex: none; align-items: center; justify-content: center; width: 6.4rem; height: 6.4rem; border-radius: 50%; background: var(--ink); color: var(--bg); font-size: 2rem; font-weight: 500; }
