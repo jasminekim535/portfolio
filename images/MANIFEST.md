@@ -252,7 +252,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/day-guard/37-1-1-4-2.png` | 1_1-4-2.png | 1800×1800 |
 | `images/day-guard/38-1-1-7-2.png` | 1_1-7-2.png | 1800×1800 |
 | `images/day-guard/39-1-1-9-2.png` | 1_1-9-2.png | 1800×1800 |
-| `images/day-guard/40-1.91-1-1-3.png` | 1.91_1-1-3.png | 3438×1800 |
+| `images/day-guard/40-1.91-1-1-3.webp` | 1.91_1-1-3.png | 1200×628 |
 | `images/day-guard/41-1.91-1-4-3.png` | 1.91_1-4-3.png | 3438×1800 |
 | `images/day-guard/42-1.91-1-7-3.png` | 1.91_1-7-3.png | 3438×1800 |
 | `images/day-guard/43-1.91-1-9-3.png` | 1.91_1-9-3.png | 3438×1800 |
