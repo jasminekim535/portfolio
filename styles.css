@@ -259,6 +259,16 @@ img, video { display: block; }
 .heard-k { margin: 0 0 .8rem; font-size: 1.2rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .page-content .heard2 ul { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); }
 .heard2 li { padding: 1.4rem 0; border-bottom: 1px solid var(--rule); font-size: 1.8rem; line-height: 1.35; color: var(--ink); }
+.issues { margin-top: 3.2rem; }
+.page-content .issues ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); }
+.iss { display: grid; grid-template-columns: 8.4rem minmax(0, 1fr); gap: 1.6rem; align-items: baseline; padding: 1.6rem 0; border-bottom: 1px solid var(--rule); }
+.sev { justify-self: start; padding: .2rem .9rem; border: 1px solid var(--ink); border-radius: 99px; font-size: 1.1rem; font-weight: 500; color: var(--ink); }
+.iss--high .sev { background: var(--ink); color: var(--bg); }
+.iss--low .sev { border-color: var(--rule); color: var(--muted); }
+.iss p { margin: 0; }
+.iss-t { font-size: 1.7rem; line-height: 1.35; color: var(--ink); }
+.iss-d { margin-top: .4rem !important; font-size: 1.4rem; color: var(--muted); }
+.hf-persona { max-width: 64rem; margin-top: 4rem; }
 .decs { border-top: 1px solid var(--rule); }
 .dec { display: grid; grid-template-columns: 1fr 4rem 1fr; align-items: center; gap: 1.6rem; padding: 2rem 0; border-bottom: 1px solid var(--rule); }
 .dec p { margin: 0; }
@@ -272,6 +282,7 @@ img, video { display: block; }
 @media (max-width: 768px) {
   .hmw, .pair { grid-template-columns: 1fr; }
   .heard2 { grid-template-columns: 1fr; gap: 2.4rem; }
+  .iss { grid-template-columns: 1fr; gap: .8rem; }
   .fn { width: 100%; grid-template-columns: 6rem minmax(0, 1fr); }
   .fn-n { font-size: 3.2rem; }
   .dec { grid-template-columns: 1fr; gap: .4rem; }
