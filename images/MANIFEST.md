@@ -165,14 +165,14 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/migrant-compass/12-migrant-compass-mobile-app-wireframe.png` | Migrant-Compass-Mobile-App-Wireframe.png | 435×853 |
 | `images/migrant-compass/13-migrant-compass-mobile-app-wireframe.png` | Migrant-Compass-Mobile-App-Wireframe.png | 435×853 |
 | `images/migrant-compass/14-migrant-compass-mobile-ap.p-wireframe.png` | Migrant-Compass-Mobile-Ap.p-Wireframe.png | 436×853 |
-| `images/migrant-compass/15-migrant-compass-mobile-app-wireframe.png` | Migrant-Compass-Mobile-App-Wireframe.png | 460×1151 |
-| `images/migrant-compass/16-migra2nt-compass-mobile-app-wireframe.png` | Migra2nt-Compass-Mobile-App-Wireframe.png | 480×1151 |
-| `images/migrant-compass/17-migrant-compass2-mobile-app-wireframe.png` | Migrant-Compass2-Mobile-App-Wireframe.png | 460×1151 |
-| `images/migrant-compass/18-migrant-compass-mobil2e-app-wireframe.png` | Migrant-Compass-Mobil2e-App-Wireframe.png | 435×1697 |
-| `images/migrant-compass/19-w.png` | w.png | 460×1340 |
-| `images/migrant-compass/20-3.png` | 3.png | 460×992 |
-| `images/migrant-compass/21-4.png` | 4.png | 436×960 |
-| `images/migrant-compass/22-5.png` | 5.png | 436×1185 |
+| `images/migrant-compass/15-migrant-compass-mobile-app-wireframe.png` | Migrant-Compass-Mobile-App-Wireframe.png | 400×784 |
+| `images/migrant-compass/16-migra2nt-compass-mobile-app-wireframe.png` | Migra2nt-Compass-Mobile-App-Wireframe.png | 400×934 |
+| `images/migrant-compass/17-migrant-compass2-mobile-app-wireframe.png` | Migrant-Compass2-Mobile-App-Wireframe.png | 400×1058 |
+| `images/migrant-compass/18-migrant-compass-mobil2e-app-wireframe.png` | Migrant-Compass-Mobil2e-App-Wireframe.png | 400×1561 |
+| `images/migrant-compass/19-w.png` | w.png | 400×784 |
+| `images/migrant-compass/20-3.png` | 3.png | 400×784 |
+| `images/migrant-compass/21-4.png` | 4.png | 400×881 |
+| `images/migrant-compass/22-5.png` | 5.png | 400×1086 |
 
 ## hopoffer.html — HopOffer
 
