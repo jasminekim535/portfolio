@@ -269,6 +269,26 @@ img, video { display: block; }
 .iss-t { font-size: 1.7rem; line-height: 1.35; color: var(--ink); }
 .iss-d { margin-top: .4rem !important; font-size: 1.4rem; color: var(--muted); }
 .hf-persona { margin: 4.8rem 0 0; }
+/* Migrant Compass */
+.ta { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: 3.2rem; align-items: start; }
+.ta-note { margin: 2.4rem 0 0; }
+.ta-img .fg-box { background: #fff; }
+.mb { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 3.2rem; align-items: start; }
+.page-content .mb-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); }
+.mb-list li { padding: 1.4rem 0; border-bottom: 1px solid var(--rule); font-size: 1.4rem; line-height: 1.45; color: var(--body); }
+.mb-list b { display: block; margin-bottom: .2rem; font-size: 1.6rem; font-weight: 500; color: var(--ink); }
+.logo-row { margin-top: 3.2rem; }
+.logo-fig { max-width: 48rem; }
+.logo-box { padding: 4rem; border-radius: var(--radius); background: #fff; }
+.logo-box img { display: block; width: 100%; height: auto; }
+.mc-phones .phone { aspect-ratio: auto; }
+.csr--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 768px) {
+  .ta, .mb, .csr--2 { grid-template-columns: 1fr; }
+  .ta-img { max-width: 24rem; }
+  .logo-box { padding: 2.4rem; }
+}
+.mc-phones .phone-screen { height: auto; aspect-ratio: 435 / 853; background: #fff; }
 .pz { padding: 3.2rem; border-radius: var(--radius); background: var(--surface); }
 .pz-who { display: flex; align-items: center; gap: 1.6rem; }
 .pz-av { display: inline-flex; flex: none; align-items: center; justify-content: center; width: 6.4rem; height: 6.4rem; border-radius: 50%; background: var(--ink); color: var(--bg); font-size: 2rem; font-weight: 500; }

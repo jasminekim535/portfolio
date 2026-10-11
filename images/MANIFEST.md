@@ -140,7 +140,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | Path | Original file | Size (px) |
 |---|---|---|
 | `images/migrant-compass/01-title-page1.png` | title_page1.png | 1920×940 |
-| `images/migrant-compass/02-logo.png` | inline logo image | 310×235 |
+| `images/migrant-compass/02-logo.png` | migrant compass/download.png (cropped) | 788×300 |
 | `images/migrant-compass/03-frame-1.png` | Frame-1.png | 866×538 |
 | `images/migrant-compass/04-frame-1.png` | Frame-1.png | 2564×4256 |
 | `images/migrant-compass/05-screenshot-2025-11-15-at-6.58.04pm.png` | Screenshot-2025-11-15-at-6.58.04PM.png | 400×774 |
