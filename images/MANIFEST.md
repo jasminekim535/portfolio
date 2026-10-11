@@ -175,7 +175,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 |---|---|---|
 | `images/about/01-img-0003-2.jpg` | IMG_0003-2.JPG | 2724×3131 |
 
-## designs.html — Designs
+## designs.html — Graphic & Art
 
 | Path | Original file | Size (px) |
 |---|---|---|
