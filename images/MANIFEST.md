@@ -23,16 +23,22 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 
 | Path | Original file | Size (px) |
 |---|---|---|
-| `images/now-institute/01-screenshot-2026-07-13-at-3.53.33pm.png` | Screenshot-2026-07-13-at-3.53.33PM.png | 3024×1524 |
-| `images/now-institute/02-screenshot-2026-07-13-at-3.52.46pm.png` | Screenshot-2026-07-13-at-3.52.46PM.png | 3022×1544 |
+| `images/now-institute/01-screenshot-2026-07-13-at-3.53.33pm.webp` | notonow.org home, top of page @2x | 2880×1800 |
+| `images/now-institute/02-screenshot-2026-07-13-at-3.52.46pm.webp` | nowinstitute.org home, top of page @2x | 2880×1472 |
 | `images/now-institute/03-screenshot-1778536857657.png` | screenshot-1778536857657.png | 1912×1068 |
 | `images/now-institute/04-notonow.png` | notonow.png | 7040×4224 |
-| `images/now-institute/05-landing-page.png` | landing-page.png | 1355×5904 |
-| `images/now-institute/06-about.png` | about.png | 1355×2094 |
-| `images/now-institute/07-history.png` | history.png | 1355×4354 |
-| `images/now-institute/08-design.png` | design.png | 1355×5327 |
-| `images/now-institute/09-credits.png` | credits.png | 1356×1192 |
-| `images/now-institute/10-landing-page.png` | landing-page.png | 1440×3225 |
+| `images/now-institute/05-landing-page.webp` | notonow.org home, full page @2x | 2880×13466 |
+| `images/now-institute/05-landing-page-mobile.jpg` | notonow.org home, phone (390px) full page @2x | 780×20638 |
+| `images/now-institute/06-about.webp` | notonow.org/about, full page @2x | 2880×4522 |
+| `images/now-institute/06-about-mobile.webp` | notonow.org/about, phone full page @2x | 780×8926 |
+| `images/now-institute/07-history.webp` | notonow.org/history, full page @2x | 2880×8856 |
+| `images/now-institute/07-history-mobile.jpg` | notonow.org/history, phone full page @2x | 780×16562 |
+| `images/now-institute/08-design.webp` | notonow.org/design, full page @2x | 2880×12358 |
+| `images/now-institute/08-design-mobile.jpg` | notonow.org/design, phone full page @2x | 780×19010 |
+| `images/now-institute/09-credits.png` | notonow.org/credits, full page @2x | 2880×4270 |
+| `images/now-institute/09-credits-mobile.webp` | notonow.org/credits, phone full page @2x | 780×6380 |
+| `images/now-institute/10-landing-page.webp` | nowinstitute.org home, full page @2x | 2880×7500 |
+| `images/now-institute/10-landing-page-mobile.webp` | nowinstitute.org home, phone full page @2x | 780×10402 |
 | `images/now-institute/11-about-overview.png` | about--overview.png | 1440×1892 |
 | `images/now-institute/12-contact.png` | contact.png | 1440×421 |
 | `images/now-institute/13-nav-bar.png` | Nav-bar.png | 1440×437 |
@@ -75,7 +81,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 
 | Path | Original file | Size (px) |
 |---|---|---|
-| `images/hfes-stg/01-screenshot-2026-03-27-at-3.55.09pm.png` | Screenshot-2026-03-27-at-3.55.09PM.png | 2994×1496 |
+| `images/hfes-stg/01-screenshot-2026-03-27-at-3.55.09pm.webp` | hfessustg.wixsite.com home, top of page @2x | 2880×1439 |
 | `images/hfes-stg/02-hfes-logo-full.png` | HFES_Logo_Full.png | 1609×200 |
 | `images/hfes-stg/03-affinity-diagrams.png` | Affinity-Diagrams.png | 13794×2812 |
 | `images/hfes-stg/04-screenshot-2026-03-27-at-3.34.46pm.png` | Screenshot-2026-03-27-at-3.34.46PM.png | 3024×1538 |
@@ -83,6 +89,8 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/hfes-stg/06-wireframes.png` | wireframes.png | 12272×9170 |
 | `images/hfes-stg/07-screenshot-2026-03-27-at-10.42.14pm.png` | Screenshot-2026-03-27-at-10.42.14PM.png | 1576×934 |
 | `images/hfes-stg/08-screenshot-2026-03-26-at-3.27.55pm.png` | Screenshot-2026-03-26-at-3.27.55PM.png | 1590×1436 |
+| `images/hfes-stg/09-full-page.webp` | hfessustg.wixsite.com home, full page @2x | 2880×7212 |
+| `images/hfes-stg/09-full-page-mobile.webp` | hfessustg.wixsite.com home, phone (320px) full page @2x | 640×6484 |
 
 ## trendy.html — Trendy
 
