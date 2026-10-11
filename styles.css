@@ -68,7 +68,7 @@ img, video { display: block; }
   margin: 0; font-size: clamp(4.8rem, 7vw, 9rem); line-height: .95; font-weight: 400; letter-spacing: -0.05em; color: var(--ink);
 }
 .dot { color: var(--accent); }
-.cs-sub { margin: 1.2rem 0 0; font-size: 2rem; line-height: 1.35; color: var(--muted); }
+.cs-sub { margin: 2.4rem 0 0; font-size: 2rem; line-height: 1.35; color: var(--muted); }
 .cs-head .chips { margin-top: 1.6rem; }
 .wcard .chips li { background: var(--bg); }
 .cs-meta {
@@ -265,6 +265,34 @@ img, video { display: block; }
   .p-quote { grid-row: auto; font-size: 2rem; }
   .hstrip .phone-wrap { width: 16rem; }
   .hstrip .hs-item { width: 26rem; }
+}
+
+/* ===== DESIGNS PAGE: editorial grid ===== */
+.bn-count { margin: 1.6rem 0 0; font-size: 1.2rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 5.6rem 2rem; margin-top: 2.4rem; }
+.bn { grid-column: span var(--span); display: block; color: inherit; }
+.bn-img { overflow: hidden; background: var(--ph); }
+.bn--xl .bn-img { height: clamp(32rem, 40vw, 56rem); }
+.bn--lg .bn-img { height: clamp(28rem, 32vw, 44rem); }
+.bn--md .bn-img { height: clamp(24rem, 26vw, 36rem); }
+.bn-img img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .6s ease; }
+.bn:hover .bn-img img { transform: scale(1.02); }
+.bn-cap { display: grid; grid-template-columns: auto 1fr; column-gap: 1.2rem; align-items: baseline; margin-top: 1.4rem; }
+.bn-n { grid-row: span 2; font-size: 1.3rem; color: var(--muted); }
+.page-content .bn-title { margin: 0; font-size: 2.4rem; line-height: 1.15; font-weight: 500; letter-spacing: -0.025em; color: var(--ink); }
+.bn--xl .page-content .bn-title, .page-content .bn--xl .bn-title { font-size: 3.2rem; }
+.bn:hover .bn-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.bn-sub { color: var(--muted); }
+@media (max-width: 768px) {
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4rem 1.6rem; }
+  .bn { grid-column: span 1; }
+  .bn--xl, .bn--lg { grid-column: 1 / -1; }
+  .bn--md .bn-img { height: 26rem; }
+}
+@media (max-width: 600px) {
+  .bento { grid-template-columns: 1fr; }
+  .bn, .bn--xl, .bn--lg { grid-column: auto; }
+  .bn .bn-img { height: auto; aspect-ratio: 4 / 3; }
 }
 
 /* ===== HOMEPAGE (after the references) ===== */
