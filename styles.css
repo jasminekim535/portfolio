@@ -404,7 +404,7 @@ img, video { display: block; }
 .page-content .xlist { margin: 0; padding: 0; list-style: none; }
 .xlist li { border-bottom: 1px solid var(--rule); }
 .xlist li:first-child { border-top: 1px solid var(--rule); }
-.xlist a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 21rem; gap: 1.6rem; padding: 1.6rem 0; color: inherit; }
+.xlist .xrow, .xlist a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 21rem; gap: 1.6rem; padding: 1.6rem 0; color: inherit; }
 .xlist a:hover .x-role { text-decoration: underline; text-underline-offset: .2em; }
 .x-role { color: var(--ink); font-weight: 500; }
 .x-org { color: var(--body); }
