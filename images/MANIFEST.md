@@ -26,7 +26,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/now-institute/01-screenshot-2026-07-13-at-3.53.33pm.webp` | notonow.org home, top of page @2x | 2880×1800 |
 | `images/now-institute/02-screenshot-2026-07-13-at-3.52.46pm.webp` | nowinstitute.org home, top of page @2x | 2880×1472 |
 | `images/now-institute/03-screenshot-1778536857657.png` | screenshot-1778536857657.png | 1912×1068 |
-| `images/now-institute/04-notonow.png` | notonow.png | 7040×4224 |
+| `images/now-institute/04-notonow.png` | notonow (1).png | 7040×4224 |
 | `images/now-institute/05-landing-page.webp` | notonow.org home, full page @2x | 2880×13466 |
 | `images/now-institute/05-landing-page-mobile.jpg` | notonow.org home, phone (390px) full page @2x | 780×20638 |
 | `images/now-institute/06-about.webp` | notonow.org/about, full page @2x | 2880×4522 |
