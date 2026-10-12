@@ -791,12 +791,12 @@ main.page { display: block; }
 /* Graphic & Art cards: home and Graphic & Art page */
 .gcards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 2.4rem; }
 .gcard { display: block; color: inherit; }
-.gcard-img { aspect-ratio: 3 / 4; overflow: hidden; border-radius: var(--radius); background: var(--ph); }
-.gcard-img img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.gcard-img { aspect-ratio: 4 / 3; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 1.2rem; border-radius: var(--radius); background: var(--surface); }
+.gcard-img img { display: block; max-width: 100%; max-height: 100%; width: auto; height: 100%; object-fit: contain; box-shadow: 0 8px 20px -12px rgba(17,17,17,.4); transition: transform .6s ease; }
 .gcard:hover .gcard-img img { transform: scale(1.02); }
 .gcard .bn-cap { display: block; margin-top: 1.2rem; }
 .gcard .bn-n { display: block; margin-bottom: .2rem; }
-.page-content .gcard .wk-title { margin: 0; font-size: 2rem; }
+.page-content .gcard .wk-title { margin: 0; font-size: 1.8rem; }
 .gcard .wk-sub { margin: .2rem 0 0; font-size: 1.4rem; color: var(--muted); }
 .gcard:hover .wk-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
-@media (max-width: 600px) { .gcards { gap: .8rem; } .page-content .gcard .wk-title { font-size: 1.4rem; line-height: 1.25; } .gcard .wk-sub { display: none; } }
+@media (max-width: 600px) { .gcards { gap: .8rem; } .gcard-img { aspect-ratio: 3 / 4; padding: .8rem; } .page-content .gcard .wk-title { font-size: 1.4rem; line-height: 1.25; } .gcard .wk-sub { display: none; } }
