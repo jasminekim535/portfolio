@@ -10,7 +10,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | Path | Original file | Size (px) |
 |---|---|---|
 | `images/index/cover-hfes-stg.webp` | composed cover (desktop + mobile site) | 2000×1000 |
-| `images/index/cover-travel-mate.webp` | composed cover (Korea trip theme, flat phone frames with 30-home-screen + 24-file); also the Travel Mate page hero | 2000×1060 |
+| `images/index/cover-travel-mate.webp` | composed cover (Korea trip theme, flat phone frames: start screen straightened from 01-travel-mate + 30-home-screen); also the Travel Mate page hero | 2000×1060 |
 | `images/index/01-screenshot-2026-07-07-at-2.21.54pm.png` | Screenshot-2026-07-07-at-2.21.54PM.png | 3024×1602 |
 | `images/index/02-screenshot-2026-03-27-at-3.55.09pm.png` | Screenshot-2026-03-27-at-3.55.09PM.png | 2994×1496 |
 | `images/index/03-title-page.png` | title_page.png | 1920×940 |
