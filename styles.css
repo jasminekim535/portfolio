@@ -868,3 +868,5 @@ main.page { display: block; }
   .gproj-list--stack .gproj-meta { margin-top: 0; }
   .gproj-list--stack .gproj-strip { margin-top: 1.6rem; }
 }
+/* Home UX cards: same rounded corners as the rest of the site */
+.wk .wk-img { border-radius: var(--radius); }
