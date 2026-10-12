@@ -787,3 +787,16 @@ main.page { display: block; }
   .media { width: 100% !important; }
   .g-grid:not([style*="--cols:1"]) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Graphic & Art cards: home and Graphic & Art page */
+.gcards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 2.4rem; }
+.gcard { display: block; color: inherit; }
+.gcard-img { aspect-ratio: 3 / 4; overflow: hidden; border-radius: var(--radius); background: var(--ph); }
+.gcard-img img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.gcard:hover .gcard-img img { transform: scale(1.02); }
+.gcard .bn-cap { display: block; margin-top: 1.2rem; }
+.gcard .bn-n { display: block; margin-bottom: .2rem; }
+.page-content .gcard .wk-title { margin: 0; font-size: 2rem; }
+.gcard .wk-sub { margin: .2rem 0 0; font-size: 1.4rem; color: var(--muted); }
+.gcard:hover .wk-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+@media (max-width: 600px) { .gcards { gap: .8rem; } .page-content .gcard .wk-title { font-size: 1.4rem; line-height: 1.25; } .gcard .wk-sub { display: none; } }

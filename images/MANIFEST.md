@@ -201,6 +201,9 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/designs/03-king-poster.jpg` | king-poster-.jpg | 3456×8064 |
 | `images/designs/04-king-mfa-sign.webp` | print-copy_Page_4.jpg, sign photo cropped 4:3 | 727×545 |
 | `images/designs/05-playing-cards-spread.webp` | IMG_2250.jpeg | 1600×1200 |
+| `images/designs/cover-day-guard.webp` | 32-9-16-1-1, 3:4 crop | 800×1067 |
+| `images/designs/cover-playing-cards.webp` | playing-cards page 1, 3:4 crop | 900×1200 |
+| `images/designs/cover-king-menkaura.webp` | king poster, 3:4 crop | 600×800 |
 | `images/designs/04-jasmine-poster.jpg` | Jasmine-poster.jpg | 5148×8008 |
 | `images/designs/05-posters-final-page-1.jpg` | posters-final_Page_1.jpg | 4850×7250 |
 | `images/designs/06-typeface-page-4.jpg` | typeface_Page_4.jpg | 2200×3400 |
