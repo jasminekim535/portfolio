@@ -388,3 +388,6 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/king-menkaura-and-queen/05-print-copy-page-2.jpg` | print-copy_Page_2.jpg | 6528×4224 |
 | `images/king-menkaura-and-queen/06-print-copy-page-5.jpg` | print-copy_Page_5.jpg | 7200×16800 |
 | `images/king-menkaura-and-queen/07-print.png` | print.png | 10800×25200 |
+| `images/king-menkaura-and-queen/08-directional-sign.webp` | print-copy_Page_3.jpg, sign cropped | 196×579 |
+| `images/king-menkaura-and-queen/09-banner.webp` | print-copy_Page_2.jpg, banner cropped | 803×227 |
+| `images/king-menkaura-and-queen/10-mfa-sign.webp` | print-copy_Page_4.jpg, photo cropped | 764×545 |
