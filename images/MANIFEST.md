@@ -201,7 +201,6 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/designs/03-king-poster.jpg` | king-poster-.jpg | 3456×8064 |
 | `images/designs/04-king-mfa-sign.webp` | print-copy_Page_4.jpg, sign photo cropped 4:3 | 727×545 |
 | `images/designs/05-playing-cards-spread.webp` | IMG_2250.jpeg | 1600×1200 |
-| `images/designs/dg-email-top.webp` | Whiskey email, top 9:16 | 800×1422 |
 | `images/designs/04-jasmine-poster.jpg` | Jasmine-poster.jpg | 5148×8008 |
 | `images/designs/05-posters-final-page-1.jpg` | posters-final_Page_1.jpg | 4850×7250 |
 | `images/designs/06-typeface-page-4.jpg` | typeface_Page_4.jpg | 2200×3400 |
