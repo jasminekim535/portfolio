@@ -440,6 +440,11 @@ img, video { display: block; }
 .pc-hero { padding: 3.2rem; border-radius: var(--radius); background: var(--surface); }
 .pc-hero .jr-fig img { object-fit: contain; background: #fff; box-shadow: 0 12px 28px -18px rgba(17,17,17,.45); }
 .dz-hero .shot-cap { margin-top: 1rem; }
+.km-sw { display: flex; height: 4.8rem; margin-top: 2.4rem; border-radius: var(--radius); overflow: hidden; }
+.km-sw span { flex: 1; }
+.jr-fig.km-cap { aspect-ratio: auto; }
+.km-cap img { aspect-ratio: var(--r); height: auto !important; }
+.km-cap .shot-cap { margin-top: .8rem; }
 .km-hero { display: flex; justify-content: center; margin: 0; padding: 4rem; border-radius: var(--radius); background: var(--surface); }
 .km-hero img { display: block; height: min(72rem, 120vw); width: auto; max-width: 100%; object-fit: contain; box-shadow: 0 20px 40px -24px rgba(17,17,17,.5); }
 .dz-k { margin: 0 0 .8rem; font-size: 1.2rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
