@@ -400,6 +400,9 @@ img, video { display: block; }
 .bn { grid-column: span var(--span); display: block; color: inherit; }
 .bn-img { overflow: hidden; background: var(--ph); }
 .bn .bn-cover { height: auto !important; }
+.bn-duo { grid-column: 1 / -1; display: grid; gap: 2rem; align-items: start; }
+.bn-duo .bn-cover { background: #fff; }
+@media (max-width: 600px) { .bn-duo { grid-template-columns: 1fr !important; } }
 .bn-cover img { object-fit: cover !important; }
 .bn--xl .bn-img { height: clamp(32rem, 40vw, 56rem); }
 .bn--lg .bn-img { height: clamp(28rem, 32vw, 44rem); }
