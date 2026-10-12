@@ -193,6 +193,7 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | Path | Original file | Size (px) |
 |---|---|---|
 | `images/about/01-img-0003-2.jpg` | IMG_0003-2.JPG | 2724×3131 |
+| `images/about/02-portrait.webp` | IMG_0003-2.jpg, 4:5 crop, brightened | 600×750 |
 
 ## designs.html — Graphic & Art
 
