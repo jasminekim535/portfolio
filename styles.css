@@ -304,7 +304,7 @@ img, video { display: block; }
 .tm-step figcaption { display: grid; grid-template-columns: auto 1fr; column-gap: 1rem; margin-top: 1.2rem; font-size: 1.4rem; line-height: 1.4; color: var(--muted); }
 .tm-step figcaption .step-n { grid-row: span 2; }
 .tm-step figcaption b { font-weight: 500; color: var(--ink); }
-@media (max-width: 768px) { .km-tiles { grid-template-columns: 1fr; } .km-hero2 { padding: 1.2rem; } .gproj-list--stack .gproj-txt { display: block; } }
+@media (max-width: 768px) { .km-tiles { grid-template-columns: 1fr; } .gproj-list--stack .gproj-txt { display: block; } }
 @media (max-width: 600px) { .pc-hero { padding: 1.2rem; } .pc-hero .jrow { grid-template-columns: 1fr 1fr !important; } }
 @media (max-width: 768px) { .tm-keys { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tm-flow { grid-template-columns: 1fr; } }
 @media (max-width: 768px) {
@@ -446,8 +446,8 @@ img, video { display: block; }
 .jr-fig.km-cap { aspect-ratio: auto; }
 .km-cap img { aspect-ratio: var(--r); height: auto !important; }
 .km-cap .shot-cap { margin-top: .8rem; }
-.km-hero2 { padding: 3.2rem; border-radius: var(--radius); background: #1f3b44; }
-.km-hero2 .jrow { gap: 2rem; }
+.km-hero { margin-bottom: 6.4rem; display: flex; justify-content: center; }
+.km-hero img { display: block; height: min(80vh, 70rem); width: auto; max-width: 100%; object-fit: contain; border-radius: var(--radius); }
 .km-tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem 2rem; }
 .km-tile { margin: 0; }
 .km-tile-img { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; padding: 2rem; border-radius: var(--radius); background: var(--surface); overflow: hidden; }
@@ -461,8 +461,6 @@ img, video { display: block; }
 .gproj-list--stack .gproj-meta { grid-row: 1 / span 3; margin-top: 2.4rem; }
 .gproj-list--stack .gproj-strip { grid-row: 4 / span 2; align-self: end; margin-top: 1.2rem; }
 .gproj-list--stack .gproj-go { grid-row: 5; }
-.km-hero { display: flex; justify-content: center; margin: 0; padding: 4rem; border-radius: var(--radius); background: var(--surface); }
-.km-hero img { display: block; height: min(72rem, 120vw); width: auto; max-width: 100%; object-fit: contain; box-shadow: 0 20px 40px -24px rgba(17,17,17,.5); }
 .dz-k { margin: 0 0 .8rem; font-size: 1.2rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .dz-k .icon { color: var(--ink); }
 .gal { display: grid; grid-template-columns: repeat(var(--gcols, 3), minmax(0, 1fr)); gap: 1.2rem; }
