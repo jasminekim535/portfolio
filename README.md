@@ -5,10 +5,10 @@ Open `index.html` in a browser; no build step.
 
 - `index.html` – home (projects + designs)
 - `about.html`, `designs.html` – About and the full Designs index
-- Project pages: `now-institute`, `hfes-stg`, `trendy`, `travel-mate`, `migrant-compass`, `hopoffer`
+- Project pages: `now-institute`, `hfes-stg`, `trendy`, `travel-mate`, `migrant-compass`
 - Design pages: `day-guard`, `playing-cards`, `king-menkaura-and-queen`
 - `styles.css` – all styles
-- `site.js` – phone menu, slideshows, click-to-enlarge images
+- `site.js` – phone menu, slideshows, scrolling image strips
 
 ## Images
 

@@ -171,23 +171,6 @@ Until a file exists, the page shows a blank placeholder box at the correct size.
 | `images/migrant-compass/21-4.png` | 4.png | 400×881 |
 | `images/migrant-compass/22-5.png` | 5.png | 400×1086 |
 
-## hopoffer.html — HopOffer
-
-| Path | Original file | Size (px) |
-|---|---|---|
-| `images/hopoffer/01-slide-16-9-1.png` | Slide-16_9---1.png | 1920×1080 |
-| `images/hopoffer/02-slide-16-9-1.png` | Slide-16_9---1.png | 1920×1080 |
-| `images/hopoffer/03-slide-16-9-2.png` | Slide-16_9---2.png | 1920×1080 |
-| `images/hopoffer/04-slide-16-9-3.png` | Slide-16_9---3.png | 1920×1080 |
-| `images/hopoffer/05-slide-16-9-4.png` | Slide-16_9---4.png | 1920×1080 |
-| `images/hopoffer/06-slide-16-9-5.png` | Slide-16_9---5.png | 1920×1080 |
-| `images/hopoffer/07-questions.png` | Questions.png | 19724×6163 |
-| `images/hopoffer/08-home.png` | Home.png | 5546×4291 |
-| `images/hopoffer/09-profile.png` | Profile.png | 4462×4082 |
-| `images/hopoffer/10-favorite.png` | Favorite.png | 5546×4052 |
-| `images/hopoffer/11-search.png` | Search.png | 8925×3904 |
-| `images/hopoffer/12-recruiter.png` | Recruiter.png | 25176×12685 |
-
 ## about.html — About
 
 | Path | Original file | Size (px) |
